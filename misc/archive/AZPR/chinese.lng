@@ -1,0 +1,461 @@
+; AZPR language file
+; ==================
+
+; blank lines and lines starting from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, do NOT add this formating characters if original string doesn't
+; use them
+
+;
+; Special fields, they will be used later like %FIELD_NAME%
+; 23/08/2000 Now these fields defined internally by program
+;
+;PROG_NAME=AZPR
+;PROG_FULLNAME=Advanced ZIP Password Recovery
+;PROG_VER=3.0
+;ASAVE_FILE=~azpr.azr
+;LOGFILE=azpr.log
+;LANGFILE_VERSION=3.0
+;PROG_EXTU=ZIP
+;PROG_EXT=zip
+;PROG_NAME_EXT=azr
+;
+; File information
+; Your name (if you so wish) and your language name defined here
+;
+TRANSLATOR= Tsai-Ye Tong (s83098@cc.ntnu.edu.tw)
+LANGUAGE=ÁcÅé¤¤¤å
+
+;
+; You can define national characters to use with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; First, define non-Latin capital letters
+FOREIGNCAPS=
+; and then define non-Latin small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=
+; if your language doesn't use non-Latin characters, (or characters
+; can be only in upper or lowercase), leave these fields empty.
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+
+; Password range messages
+10=¤ÀªR±K½X½d³ò...
+11=µL®Äªº³Ì¤p±K½Xªø«×. ¥¦¤£²Å¦X¦¹¶}©l±K½X. ³Ì¤pªø«×¤w³Q­×§ï.
+
+; Starting password messages
+12=¤ÀªR¶}©l±K½X...
+13=¶}©l±q±K½X            
+14=¤W¦¸ªº±K½X:
+
+; Password length messages
+15=±K½Xªø«× =
+16=±K½X¥h°µ:
+
+; Mask messages
+17=¨S¦³¾B¸n²Å¸¹ªº¼Æ¦r =
+
+; Dictionary messages
+18=¶}©l¦r¨åÀÉ§ðÀ»...
+
+; Registration messages
+20=¬O¤wµù¥Uªº !
+21=¶}©l°õ¦æ, ¤wµù¥Uªºª©¥»
+22=¶}©l°õ¦æ, ¥¼µù¥Uªºª©¥», ¤@¨Ç¥\¯àµLªk¨Ï¥Î
+23=%PROG_NAME% ª©¥» %PROG_VER% - ¤wµù¥Uªº
+24=%PROG_NAME% ª©¥» %PROG_VER% - ¥¼µù¥Uªº
+
+; Autobackup messages
+30=°õ¦æ¦Û°Ê³Æ¥÷...
+31=¦Û°ÊÀx¦s¥Ø¿ý©|¥¼©w¸q. ¨Ï¥Î¸ô®|:
+32=¦Û°ÊÀx¦s¸ô®|¬OµL®Äªº
+33=½Ð¿ï¾Ü¤@­Ó¦Û°Ê¦sÀÉ¤å¥ó§¨
+34=¨ú®ø¿ï¾Ü¦Û°ÊÀx¦s¸ô®|. ¦Û°ÊÀx¦s²{¦b¤£¯à¥Î
+35=¦Û°ÊÀx¦s¸ô®|¬OµL®Äªº©Î¬O©|¥¼¿ï¾Üªº. ¨ú®ø¦Û°ÊÀx¦s ?
+36=¦Û°ÊÀx¦sÀÉ®×¦WºÙ©|¥¼©w¸q. ¨Ï¥Î '%ASAVE_FILE%' ÀÉ¦W
+
+; Interface messages
+40=-  ¥¼©R¦W
+41=Â÷¶}«e, ¬O§_­n¥ýÀx¦s§Aªº±M®×¡H
+42=µ²§ô    
+43=¥¿¹Á¸Õ¶}±Ò­ì©lÀÉ®×      
+44=ÀÉ®×
+45=¦¨¥\¦a³Q¥´¶}
+
+; Project Messages
+50=«Ø¥ß·sªº±M®×
+
+; Result messages
+60=±K½X¦¨¥\¦a´_­ì !
+61=¥[±KÁä¦¨¥\¦a´_­ì !
+62=¬O³o­ÓÀÉ®×ªº¤@­Ó¥¿½T±K½X
+
+; Button captions
+70=¶}±Ò
+71=¦sÀÉ
+72=¶}©l !
+73=°±¤î
+74=¦r¤¸¶°
+75=®Ä²v«ü¼Ð
+76=µù¥U
+77=»¡©ú
+78=Ãö©ó
+79=Â÷¶}
+
+; Button hints
+80=³Ð³y¤@­Ó·sªº±M®×
+81=¶}±Ò±M®×...
+82=Àx¦s±M®×
+83=¶}©l´_­ì±K½X
+84=°±¤î´_­ì±K½X
+85=¦Û­q¦r¤¸¶°...
+86=³t«×´ú¸Õ
+87=»¡©ú¥DÃD
+88=Ãö©ó %PROG_NAME%
+89=Â÷¶} %PROG_NAME%
+
+90=µù¥U %PROG_NAME% ªº°Æ¥»
+
+91=¸ü¤J %PROG_EXTU% ÀÉ®×¶i¤J¦¹±M®×...
+92=¿ï¾Ü¦r¨åÀÉ®×...          
+93=¿ï¾Ü¯Â¤å¦rÀÉ®×... 
+94=¿ï¾Ü¦Û°ÊÀx¦s¥Ø¿ý...          
+95=²M°£¶}©l±K½X           
+96=²M°£¾B¸n
+97=¥þ³¡­^¤å¦r¥À + ¥þ³¡¼Æ¦r + ¥þ³¡¯S®í²Å¸¹
+
+98=²M°£ ¡u¶}©l±q¡v Äæ¦ì
+99=´M§ä±K½X 
+100=¨Ï¥Î³o¨ÇÁä¸Ñ¶} %PROG_EXTU% À£ÁYÀÉªº½s½X
+101=¸ü¤J¥[±KÁä
+102=²M°£¶}©l¦æ
+
+; Interface captions
+110=¥[±Kªº %PROG_EXTU% ÀÉ     
+111=¦r¨å¿ï¶µ          
+112=¦r¨åÀÉ®×¸ô®|:        
+113=±K½Xªø«×¿ï¶µ
+114=³Ì¤p±K½Xªø =
+115=³Ì¤j±K½Xªø =
+
+116=§ðÀ»Ãþ«¬
+117=Brute-force
+118=¾B¸n
+119=¦r¨åÀÉ
+120=¯Â¤å¦r
+
+121=Brute-force ½d³ò¿ï¶µ
+122=¥H¤W¬Ò¬O
+123=ªÅ¥ÕÁä
+124=¥þ³¡¯S®í²Å¸¹ (!@...)     
+125=¥þ³¡¤j¼g¦r¥À (A - Z)  
+126=¥þ³¡¤p¼g¦r¥À (a - z)   
+127=¥þ³¡¼Æ¦r (0 - 9)  
+128=¨Ï¥ÎªÌ©w¸q
+129=¶}©l±q:    
+130=¾B¸n:
+131=¿ï¶µ   
+132=³Ì¤p¤Æ¨ì¤u¨ã¦C
+133=±Ò°Ê°O¿ý¨ì %LOGFILE%
+134=ÀÉ®×§ïÅÜ¤§«e»s§@³Æ¥÷
+135=¦pªG±M®×§ïÅÜ,´£¥Ü§Ú
+136=¾B¸n²Å¸¹:
+137=¦Û°ÊÀx¦s 
+138=Àx¦s±M®×                    ¨C    
+139=¤ÀÄÁ
+140=Àu¥ýÅv¿ï¶µ
+141=­I´º
+142=°ª
+143=¥Ø«eªº±K½X:      
+144=ª¬ºAµøµ¡
+145=¹Lµ{«ü¥Ü
+146=¦r¤¸
+147=Áo©úªºÅÜºØ  (¦p¦r¤¸­«½Æ²Õ¦X, ÄA­Ë¦¸§Ç)
+148=¹Á¸Õ©Ò¦³¥i¯àªº¤j¼g/¤p¼g²Õ¦X
+149=¦Û°Ê¦sÀÉÀÉ¦W:   
+150=¦Û°ÊÀx¦s¥Ø¿ý:       
+151=¥­§¡³t«×:
+152=®É¶¡¸g¹L:
+153=®É¶¡³Ñ¤U:
+154=±K½Xªø«× =
+155=Á`¦@:
+156=³B²z:
+157=¦r¨åÀÉ§ðÀ»¹Lµ{, ³B²z
+158=±K½X
+159=¹Lµ{¦C§ó·s¶¡¹j
+160=ms
+161=¶}©l¦æ #
+162=¯Â¤å¦r¿ï¶µ        
+163=¯Â¤å¦rÀÉ®×¸ô®|: 
+164=Key0:
+165=Key1:
+166=Key2:
+
+; Pagecontrol captions
+170=½d³ò 
+171=ªø«×  
+172=¦r¨åÀÉ      
+173=¯Â¤å¦r    
+174=¦Û°ÊÀx¦s
+175=¿ï¶µ
+
+; Statistics messages
+180=¥þ³¡±K½X       
+181=¥þ³¡®É¶¡  
+182=¥­§¡³t«× (±K½X/¨C¬í)
+183=¦¹ÀÉ®×ªº±K½X 
+184=±K½X¡]HEX¡^
+185=¨S§ä¨ì
+186=%PROG_FULLNAME% ²Î­p:
+187=½Æ»s±K½X¨ì°Å¶KÃ¯
+188=½Æ»s¤Q¤»¶i¦ì±K½X¨ì°Å¶KÃ¯
+189=Àx¦s...
+190=Àx¦s±K½X¨ìÀÉ®× 
+191=½T©w
+192=¶W¹L¤@¦~
+
+193=n/a
+194=¥[±KÁä         
+195=½Æ»s¥[±KÁä¨ì³oµ§°OªO                 
+196=Àx¦s¥[±KÁä¨ìÀÉ®×
+
+; User charset captions
+200=¨Ï¥ÎªÌ©w¸qªº¦r¤¸¶°    
+201=©w¸q§Aªº¦r¤¸¶°     
+202=¸ü¤J¦r¤¸¶°...  
+203=Àx¦s¦r¤¸¶°...  
+204=²M°£¦r¤¸¶°   
+205=±qÀÉ®×¼W¥[¦r¤¸¶°... 
+206=½T©w
+207=¨ú®ø
+208=Âà´«¨ì OEM ½s½X
+
+; About box captions
+210=Ãö©ó 
+211=ª©¥» %PROG_VER%            ¤¤¤å»y¨t : tealeaves
+213=¶}±Ò %PROG_NAME% ªººô­¶
+214=¶}±Ò±K½X´_­ì³nÅéªººô­¶
+215=¶}±Ò Elcom ³nÅéªººô­¶¶
+
+
+; Plaintext progress messages
+220=¯Â¤å¦r§ðÀ»¥¿¦b¶i¦æ,
+221=´î¤ÖÁäªº¼Æ¥Ø
+222=´M§äÁä
+223=¥¿¹Á¸Õ«ì´_¥ô¦ó±K½X (³Ì¦h¨ì 9 ­Ó²Å¸¹ªø)
+224=¥¿¹Á¸Õ«ì´_©Ò¦³¥i¯àªº±K½X (³Ì¦h¨ì 10 ­Ó¦r¤¸ªø)
+
+230=%PROG_NAME% %PROG_VER%. ¤u§@µ²§ô.
+231=%PROG_NAME%
+232=¥¼µù¥Uªº %PROG_NAME% ³Ì¦h¥u¯à°÷´_­ì %UNREG_MAX% ­Ó¦r¤¸ªøªº±K½X
+233=À£ÁYÀÉ¦¨¥\¦a¸Ñ¶}±K½X.              
+234=À£ÁYÀÉ¸Ñ±K¿ù»~.
+235=¸Ñ±KÁä¥u¥X²{¦b¤wµù¥Uªºª©¥».
+236=±K½X¤w³Q§ä¨ì, ¦ý¥¦ªø«×¶W¹Lµû¦ôª©¥»ªº­­¨î.
+237=¥u¦³À£ÁYÀÉ¤¤ªº²Ä¤@­ÓÀÉ®×±N³Q¸Ñ±K.
+
+240=¿ï¾ÜªºÀ£ÁYÀÉ¤¤¨S¦³²Å¦XªºÀÉ®×¡C ¦pªG§A·Q­n±qÀ£ÁYÀÉ¤¤ªº¬Y¤@ÀÉ®×°õ¦æ\r\n¯Â¤å¦r§ðÀ», ½Ð­×§ï³o­ÓÀ£ÁYÀÉ¨Ï¨ä¨C¤@­Ó±N¥u§t¦³¤@­ÓÀÉ®×¡C¡@
+241=¿ï¾ÜªºÀ£ÁYÀÉ¤¤¨S¦³²Å¦XªºÀÉ®×¡C §A·Q­n¥u¨Ï¥ÎÀ£ÁYÀÉ¤¤ªº¬Y¤@ÀÉ®×¥h°õ\r\n¦æ¯Â¤å¦r§ðÀ»¶Ü?
+242=¯Â¤å¦r§ðÀ»ª¬ºA¤£¯à³QÀx¦s¡C\r\n§A¯uªº·Q­n¥h°±¤î¥¦¶Ü?
+243=¶}©l¯Â¤å¦r§ðÀ»
+
+; Benchmark messages
+250=©êºp, ®Ä²v«ü¼Ð¥u¥Î¦b brute-force ©M§t¾B¸nªº brute-force .
+251=®Ä²v«ü¼Ð´ú¸Õ¤¤ ...
+252=±K½X¹Lµ{
+253=¤u§@®É¶¡
+
+;
+; Error messages
+;
+
+; Brute-force
+300=µL®Äªº±K½X½d³ò©Î½d³ò©|¥¼©w¸q
+301=µL®Äªº¶}©l±K½X, ¥¦¤£²Å¦X¤@­Ó¤w¿ï¾Üªº½d³ò
+302=±K½X³Ì¤jªø«×¥²¶·¤j©ó³Ì¤pªø«×
+303=§ä¤£¨ì±K½X 
+
+; Dictionary
+304=¶}±Ò¦r¨åÀÉµo¥Í¿ù»~
+305=¶}©l¦æ¶W¹L¦r¨åÀÉªº¦æ¼Æ
+
+; Common
+310=µLªkÀx¦s¨ì¿ï¾ÜªºÀÉ®×
+311=%PROG_NAME% ¿ù»~
+312=¨Ï¥ÎªÌ¤¤Â_
+313=¦Û°ÊÀx¦s¸ô®|©|¥¼³Q¿ï¾Ü
+314=µL®Äªº¶i¦æ¹Lµ{´Î§ó·s¶¡¹j                
+315=µLªk¶}±Ò³o­Ó±M®×ÀÉ
+
+; Archive's open errors
+320=µLªk¶}±Ò %PROG_EXTU% À£ÁYÀÉ
+321=¿ï¾ÜªºÀÉ®×¤£¬O¤@­Ó %PROG_EXTU% À£ÁYÀÉ 
+322=À£ÁYÀÉ¬OÃaªº©Î¬O«D¥[±Kªº
+323=Cashing ¿ù»~
+324=µL¥i®¾¦^ªº¨Ò¥~
+
+; Quit message
+330=Â÷¶}
+
+; Mask errors
+340=¾B¸n©|¥¼³]©w
+341=¨S§ä¨ì¾B¸n²Å¸¹
+342=¾B¸n¤£²Å¦X¤@­Ó¶}©l±K½X
+343=¾B¸n²Å¸¹©|¥¼©w¸q
+
+; Plaintext errors
+350=§ä¤£¨ì¥[±KÁä
+351=¿ï¾ÜªºÀ£ÁYÀÉ¥u¥]§t¥[±KÀÉ
+352=¨S¦³¨¬°÷ªº¸ê®Æ°õ¦æ¯Â¤å¦r§ðÀ».
+353=¯Â¤å¦r§ðÀ»µo¥Í¤º³¡¿ù»~.
+354=µL®Äªº­È.
+
+;---------------------------------------
+; New message added at December, 14 1999
+
+; Registration messages
+360=µù¥U        
+361=¿é¤Jµù¥U½X:             
+362=·PÁÂ±zµù¥U %PROG_NAME%!
+363=±z¿é¤Jªºµù¥U½X¬OµL®Äªº!
+
+; Dialog headers
+370=®Ä²v«ü¼Ðµ²ªG
+
+; Partial plain-text attack dialog
+371=§ðÀ»¥u¥Î¦bÀÉ®×¤¤ªº¬Y¤@³¡¤À
+372=¿é¤J¯Â¤å¦rªº¤j¤p:
+
+; Error message used with different previously defined error messages
+380=¿ù»~:
+
+; When selecting language from options menu
+390=»y¨t¿ï¾Ü:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=cycle %d of %d
+401=line %d of %d
+
+; Open filters, | means delimiter
+410=Charset files (*.chr)|*.chr|All files (*.*)|*.*
+411=%PROG_NAME% status files (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|All files (*.*)|*.*
+412=%PROG_EXTU% files (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% files (*.exe)|*.exe|All files (*.*)|*.*
+413=Dictionary files (*.dic)|*.dic|Text files (*.txt)|*.txt|All files (*.*)|*.*
+414=%PROG_EXTU% files (*.%PROG_EXT%)|*.%PROG_EXT%|All files (*.*)|*.*
+415=Text files (*.txt)|*.txt|All files (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=¤£¥¿½Tªº©R¥O¦C
+421=¦¹ÀÉ®×¤£¬O¤@­Ó±K½X«OÅ@ªº %PROG_EXTU% À£ÁYÀÉ©Îª¬ºAÀÉ®×
+
+; Question after plaintext attack if we aren't got a password
+430=§ä¤£¨ì±K½X. §A²{¦b·Q­n¸Ñ±KÀ£ÁYÀÉ¶Ü?
+
+431=¾B¸nªø«×¶W¹L¥¼µù¥Uª©¥»ªº­­¨î
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% ¤@¦¸¥u¯à±µ¨ü¤@­ÓÀÉ®×
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+440=¤¹³\¨Ï¥Î¤G¶i¨îªºÀÉ®×§@¬°¤@­Ó¯Â¤å¦r %PROG_EXTU% À£ÁYÀÉ
+441=¿é¤J¸ê®Æ¦ì²¾
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=§ó·s
+451=±qºô»Úºô¸ôÀË¬d %PROG_NAME% §ó·s
+452=¦¹µ{¦¡±N³s½u¦Ü Elcom ºô¯¸¦ì¸m, ¥H¨ú±o %PROG_NAME% ªº³Ì·sª©¥»¸ê°T¡C ¹Lµ{¤¤¤£±N\r\n¶Ç°e¥ô¦ó°T®§¦Ü Elcom (§Y¨Ï§A¥Ø«eªºª©¥»¸¹½X)¡C ­Y§A¥¿³B©óºô¸ô³s½uª¬ºA,\r\n«ö¤U " ½T©w " ; §_«h«ö¤U " ¨ú®ø " µ²§ô§ó·s¡C
+453=½Ðµy«Ý
+454=³s½u¦Ü Elcom ºô¯¸¦ì¸m...
+455=µLªk¨ú±o¥Ø«eªºª©¥»¸ê°T
+456=¨S¦³¦w¸Ë WININET.DLL 
+457=³s½u¨ú®ø
+458=µLªk³s½u¦Üºô¯¸¦ì¸m
+459=§Aªº %PROG_NAME% ¤w¬O³Ì·sªºª©¥»
+460=»Ý­n§ó·s, ³Ì·sªºª©¥»¬O %s.\r\n§A¯à±q %s ¤U¸ü¡C
+
+; New "About" dialog messages
+470=²£«~·s»D:
+471=FAQ:
+472=±K½X´_­ì³nÅé:
+473=±H¥X¦^õX:
+474=Elcom ­º­¶:
+
+480=»¡©ú
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=±Ò°Ê¶i¶¥ªº¯Â¤å¦r²ÕºA¹ï¸Ü²°
+491=¶i¶¥ªº¯Â¤å¦r²ÕºA
+492=¥[±KÀÉ
+493=¿ï¾Ü¥[±KÀÉ...
+494=¯Â¤å¦rÀÉ
+495=¿ï¾Ü¯Â¤å¦rÀÉ...
+496=¤G¶i¨î¸ê®Æ
+497=À£ÁYÀÉ»¡©ú¥DÃD
+498=¸ê®Æ¤j¤p: 
+499=¸ê®Æ¦ì²¾: 
+500=³sµ²À£ÁYÀÉ¤¤²Å¦XªºÀÉ®×
+501=¶}©l±q:    
+502=²M°£'¶}©l±q' Äæ¦ì
+503='¶}©l±q' Äæ¦ì¥]§tµL®Äªº­È¡C\r\n²M°£¥¦¨Ã¦A¤@¦¸°õ¦æ§ðÀ»¡C
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=ª©¥»
+
+520=§ä¤£¨ì RSA key ÀÉ
+521=¤£¥i¾aªº RSA key ÀÉ
+522=µL®Äªº RSA key ÀÉ
+
+; new for 3.50
+530=¶i¶¥
+531=¶i¶¥¿ï¶µ
+532=¦bÀx¦sªºÀ£ÁYÀÉ¤W ¨Ï¥Î¤wª¾ªºÀÉ®×¶}ÀY ( ¤Q¤»¶i¦ì )
+533=¥Ã»·¨Ï¥Î  WinZIP  ³Ì¨Î¤Æ§ðÀ»¤ÞÀº   ------------------------   ¦pªG¥i¯à©Ê¤j©ó
+534=¤wª¾¦ì¤¸²Õ:
+535=¦¹À£ÁYÀÉ¦³ %d%% ªº¥i¯à©Ê¬O¥Ñ WinZIP ©Ò²£¥Í\r\n§A·Q¨Ï¥Î WinZIP ³Ì¨Î¤Æ§ðÀ»¤ÞÀº¶Ü?
+536=¦¹ "¤wª¾¦ì¤¸²Õ" Äæ¦ì¬OµL®Äªº¡C ½Ð§ó¥¿¥¦¨Ã¦A°õ¦æ¤@¦¸\r\n(¦ì¤¸²ÕÀ³¸Ó¤@­Ó±µ¤@­Ó¨S¦³ªÅ¥Õ, ²Å¦X¤Q¤»¶i¦ì§Î¦¡)¡C
+; status window messages
+537=¨Ï¥Î¤wª¾ªºÀÉ®×¶}ÀY¡C
+538=¨Ï¥Î WinZIP ³Ì¨Î¤Æ§ðÀ»¤ÞÀº¡C
+
+540=¦¹À£ÁYÀÉ¥H %PROG_EXTU% ª©¥»©Ò²£¥Í, ¦Ó©|¥¼³Q %PROG_NAME% ¤ä´©¡C
+541=´ú¸Õ¦r¨åÀÉ
+
+550=µ²§ô¦b:
+551=²M°£µ²§ô±K½X
+552=µ²§ô±K½Xªø«×¤£²Å¦X³Ì¤j±K½Xªø«×
+553=µL®Äªºµ²§ô±K½X, ¥¦¤£²Å¦X¤@­Ó¿ï¨úªº½d³ò
+554=¾B¸n¤£²Å¦X¤@­Óµ²§ô±K½X
+555=µLªk°õ¦æ¦¹§ðÀ»¡C\r\n¶}©l±K½X¤j©ó©Îµ¥©óµ²§ô±K½X¡C
+556=§ðÀ»°±¤î©ó±K½X '%s'¡C
+
+; New messages at 14.11.2000
+560=¯Â¤å¦r§ðÀ»µLªkÀ³¥Î¦b ACE & RAR À£ÁYÀÉ
+561=°õ¦æ¯Â¤å¦r§ðÀ», §A»Ý­n¨Ï¥Î¬Û¦P§Î¦¡ªºÀ£ÁYÀÉ
+
+; New messages at 18.01.2000
+565=µLªk°õ¦æ§ðÀ»: ¥¼ª¾ªºÀ£ÁY¤è¦¡
+566=Äµ§i: deflate64 À£ÁY
+
+; End of message file

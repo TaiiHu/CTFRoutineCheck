@@ -1,0 +1,553 @@
+; AZPR language file
+; ==================
+
+; blank lines and lines starting from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, do NOT add this formating characters if original string doesn't
+; use them
+
+;
+; Special fields, they will be used later like %FIELD_NAME%
+; 23/08/2000 Now these fields defined internally by program
+;
+;PROG_NAME=AZPR
+;PROG_FULLNAME=Advanced ZIP Password Recovery
+;PROG_VER=3.0
+;ASAVE_FILE=~azpr.azr
+;LOGFILE=azpr.log
+;LANGFILE_VERSION=3.0
+;PROG_EXTU=ZIP
+;PROG_EXT=zip
+;PROG_NAME_EXT=azr
+;
+; File information
+; Your name (if you so wish) and your language name defined here
+;
+TRANSLATOR=Toma Bogdan - bog_tom@hotmail.com
+LANGUAGE=Romana
+
+;
+; You can define national characters to use with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; First, define non-Latin capital letters
+FOREIGNCAPS=
+; and then define non-Latin small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=
+; if your language doesn't use non-Latin characters, (or characters
+; can be only in upper or lowercase), leave these fields empty.
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              
+;
+;----------------------------------------------------------------------------;
+
+; Password range messages
+10=Analizez registrul de parole...
+11=Lungime minima de parola invalida. Nu se potriveste cu parola de inceput. Lungimea minima trebuie ajustata.
+
+; Starting password messages
+12=Analizez parola de inceput...
+13=Pornesc de la parola
+14=Ultima parola:
+
+; Password length messages
+15=Lungimea parolei =
+16=passwords to do:
+
+; Mask messages
+17=Numarul de simboluri fara masca =
+
+; Dictionary messages
+18=Pornesc atacul dictionarului...
+
+; Registration messages
+20=este acum integistrat !
+21=lansat, versiune inregistrata
+21=lansat
+22=lansat, versiune neinregistrata, cateva facilitati sunt dezactivate
+23=%PROG_NAME% versiunea %PROG_VER% - Inregistrata
+24=%PROG_NAME% version %PROG_VER% - Neinregistrata
+
+; Autobackup messages
+30=Efectuez autobackup...
+31=Directorul pentru salvare automata nu este definit. Folosesc calea:
+32=Calea pentru salvare automata este invalida
+33=Va rugam selectati directorul pentru salvare automata
+34=Selectarea caii pentru salvare automata anulata. Salvarea automata este acum dezactivata
+35=Calea pentru salvare automata este invalida sau nu este selectata. Dezactivez salvarea automata ?
+36=Fisierul pentru salvare automata nu este definit. Folosesc fisierul '%ASAVE_FILE%'
+
+; Interface messages
+40=-  Fara titlu
+41=Doriti sa salvati proiectul inainte de a inchide programul  ?
+42=Oprire
+43=Incerc sa deschid fisierul sursa
+44=Fisier
+45=Deschis cu succes
+
+; Project Messages
+50=Proiect nou creat
+
+; Result messages
+60=Parola recuperata cu succes !
+61=Cheile de criptare recuperate cu succes !
+62=este o parola valida pentru acest fisier
+
+; Button captions
+70=Deschid
+71=Salvez
+72=Pornesc !
+73=Opresc
+74=Set de caractere
+75=Performate
+76=Inregistrez
+77=Ajutor
+78=Despre
+79=Inchid
+
+; Button hints
+80=Creez un proiect nou
+81=Deschid proiectul...
+82=Salvez proiectul
+83=Pornesc recuperarea
+84=opresc recuperarea
+85=Set de caractere personalizat...
+86=Efectuez test de viteza
+87=Continutul ajutorului
+88=Despre %PROG_NAME%
+89=Inchid %PROG_NAME%
+
+90=Intregistrati-va copia dumneavoastra a programului %PROG_NAME%
+
+91=Incarc fisierul Load %PROG_EXTU% in proiect...
+92=Selectez fisierul dictionar...
+93=Selectez fisierul text intreg (plain-text)...
+94=Selectez directorul pentru salvare automata...
+95=Sterg parola de inceput
+96=Sterg masca
+97=Toate latine + toate numere + toate speciale
+
+98=Sterg campul "Pornesc de la"
+99=caut parola
+100=Decriptez arhiva %PROG_EXTU% folosind aceste chei
+101=Incarc cheile de criptare
+102=Sterg linia de inceput
+
+; Interface captions
+110=Fisier criptat - %PROG_EXTU%
+111=Optiuni pentru dictionar
+112=Calea fisierului dictionar:
+113=Optiuni pentru lungimea parolei
+114=Lungimea minima a parolei =
+115=Lungimea maxima a parolei =
+
+116=Tipul atacului
+117=Fortez brut
+118=Masca
+119=Dictionar
+120=Text intreg (Plain-text)
+
+121=Optiunile fortarii brute
+122=Toate caracterele tiparibile
+123=Spatiu
+124=Toate caracterele simbol (!@...)
+125=Toate caracterele latine mari (A - Z)
+126=Toate caracterele latine mici (a - z)
+127=Toate cifrele (0 - 9)
+128=Set de caractere definit de utilizator
+129=Pornesc de la:
+130=Masca:
+131=Optiuni
+132=Minimizez in system tray
+133=Activez istoricul in fisierul %LOGFILE%
+134=Efectuez backup inainte de modificarea fisierului
+135=Atentioneaza daca proiectul se schimba
+136=Simbolul mastii:
+137=Salvare automata
+138=Salvez proiectul la fiecare
+139=minut(e)
+140=Optiuni de prioritate
+141=In background
+142=Maxima
+143=Parola curenta:
+144=Starea ferestrei
+145=Indicatorul de progres
+146=caracter(e)
+147=Mutatii istete
+148=Incerc toate combinatiile posibile de caractere mici si mari
+149=Numele fisierului pentru salvare automata:
+150=Directorul pentru salvare automata:
+151=Viteza medie:
+152=Timp trecut:
+153=Timp ramas:
+154=Lungimea parolei =
+155=total:
+156=procesat:
+157=Atacul bazat pe dictionar in progres, procesat
+158=parola(e)
+159=Intervalul de actualizare al indicatorului de progres
+160=ms
+161=Linia de pornire #
+162=Optiunile textului intreg (Plain-text)
+163=Calea fisierului Plain-text:
+164=Key0:
+165=Key1:
+166=Key2:
+
+; Pagecontrol captions
+170=Interval
+171=Lungime
+172=Dictionar
+173=Text intreg (Plain-text)
+174=Salvare automata
+175=Optiuni
+
+; Statistics messages
+180=Numar total de parole
+181=Timp total
+182=Viteza medie (parole pe secunda)
+183=Parola pentru acest fisier
+184=Parola in HEX
+185=Nu a fost gasita
+186=Statisticile programului %PROG_FULLNAME%:
+187=Copiez parola in Clipboard
+188=Copiez parola HEX in Clipboard
+189=Salvez...
+190=Salvez parola in fisier
+191=In regula
+192=Mai mult decat un an
+
+193=neprecizat
+194=Cheile de criptare
+195=Copiez cheile de criptare in Clipboard
+196=Salvez cheile de criptare in fisier
+
+; User charset captions
+200=Setul de caractere definit de utilizator
+201=Defineste setul de caractere propriu
+202=Incarc setul de caractere...
+203=Salvez setul de caractere...
+204=Sterg setul de caractere
+205=Adaug setul de caractere din fisier...
+206=In regula
+207=Renunt
+208=Covertesc la codificare OEM
+
+; About box captions
+210=Despre
+211=versiunea %PROG_VER%
+213=Deschid pagina de web a programului %PROG_NAME%
+214=Deschid pagina de web a programului Password Recovery Software
+215=Deschid pagina de web a companiei Elcom Software
+
+; Plaintext progress messages
+220=Atacul de tip text intreg (plain-text) este curs de desfasurare,
+221=reducand numarul de chei
+222=cautand chei
+223=incercand regasirea oricarei parole (pana la o lungime de 9 simboluri)
+224=incercand regasirea parolei tiparibile (pana la o lungime de 10 caractere)
+
+230=%PROG_NAME% %PROG_VER%. Activitate terminata.
+231=%PROG_NAME%
+232=%PROG_NAME% neinregistrat poate recupera doar parole de lungime de pana la %UNREG_MAX% caractere
+233=Arhiva decriptata cu succes.
+234=Arhiva eronat decriptata.
+235=Cheile de decriptare sunt afisate doar in versiunea inregistrata.
+236=Parola a fost gasita, dar lungimea sa depaseste limitele versiunii de evaluare.
+237=Doar primul fisier din arhiva poate fi decriptat.
+
+240=Nu exista fisier corespondent in arhivele selectate. Daca doriti sa incepeti un atac plaintext\r folosind doar parti ale fisierului, va rog modificati arhivele astfel incat\r\nfiecare din acestea sa contina doar un fisier.
+241=Nu exista fisier corespondent in arhivele selectate. Doriti sa incepeti un atac\r\nplaintext folosind doar parti ale fisierului?
+242=Starea atacului text intreg (Plain-text) nu poate fi salvata.\r\nChiar dorti sa opriti atacul ?
+243=Atacul text intre (Plain-text) pornit
+
+; Benchmark messages
+250=Imi pare rau, analiza performantelor este disponibila doar pentru atacul forta bruta si forta bruta cu masca.
+251=Analizez  performantele...
+252=Parole de procesat
+253=Timp de lucru
+
+;
+; Error messages
+;
+
+; Brute-force
+300=Interval de parole invalid sau interval nedefinit
+301=Parola de inceput invalida, nu se potriveste intervalului selectat
+302=Lungimea maxima trebuie sa fie mai mare decat lungimea minima
+303=Parola nu a fost gasita
+
+; Dictionary
+304=Eroare la deschiderea fiserului dictionar
+305=Linia de inceput depaseste dimensiunea dictionarului
+
+; Common
+310=Nu pot salva fisierul selectat
+311=Eroare a programului %PROG_NAME%
+312=Terminat de utilizator
+313=Calea pentru salvare automata nu este selectata
+314=Intervalul de actualizare al indicatorului de progres este invalid
+315=Nu pot deschide acest fisier proiect
+
+; Archive's open errors
+320=Nu pot deschide arhiva %PROG_EXTU%
+321=Fisierul selectat nu este o arhiva %PROG_EXTU%
+322=Arhiva corupta sau fisierele nu sunt criptate
+323=Eroare in timpul schimbarii
+324=Eroare fatala
+
+; Quit message
+330=Iesire
+
+; Mask errors
+340=Masca nu este setata
+341=Nu a fost gasit nici un simbol masca
+342=Masca nu se potriveste cu parola de inceput
+343=Simbolul de masca nu este definit
+
+; Plaintext errors
+350=Cheile de criptare nu au fost gasite
+351=Arhiva selectata contine doar fisiere criptate.
+352=Nu exista destula informatie pentru un atac text intreg (plaintext).
+353=Eroare interna a atacului text intreg (plaintext).
+354=Valoare invalida.
+
+;---------------------------------------
+; New message added at December, 14 1999
+
+; Registration messages
+360=Inregistare
+361=Introduceti codul de inregistrare:
+362=Va multumim pentru ca ati inregistrat programul %PROG_NAME%!
+363=Codul pe care l-ati introdus este invalid!
+
+; Dialog headers
+370=Rezultatul testului de performanta
+
+; Partial plain-text attack dialog
+371=Atac folosind doar parti ale fisierului
+372=Introduceti lungimea textului intreg (plain-text):
+
+; Error message used with different previously defined error messages
+380=Eroare:
+
+; When selecting language from options menu
+390=Limba:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=Ciclu %d din %d
+401=linia %d din %d
+
+; Open filters, | means delimiter
+410=Fisiere set de caractere (*.chr)|*.chr|Toate fisierele (*.*)|*.*
+411=Fisiere de stare %PROG_NAME% (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|Toate fisierele (*.*)|*.*
+412=Fisiere %PROG_EXTU% (*.%PROG_EXT%)|*.%PROG_EXT%|Fisiere SFX-%PROG_EXTU% (*.exe)|*.exe|Toate fisierele (*.*)|*.*
+413=Fisiere dictionars (*.dic)|*.dic|Fisiere text (*.txt)|*.txt|Toate fisierele (*.*)|*.*
+414=Fisiere %PROG_EXTU% (*.%PROG_EXT%)|*.%PROG_EXT%|Toate fisierele (*.*)|*.*
+415=Fisiere text (*.txt)|*.txt|Toate fisierele (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=Linie incorecta de comanda
+421=Fisierul nu este o arhiva %PROG_EXTU% nu protectie sau un fisier stare
+
+; Question after plaintext attack if we aren't got a password
+430=Parola nu a fost gasita. Doriti sa decriptati arhiva acum?
+
+431=Lungimea mastii depaseste limita versiunii neinregistrate
+
+; When user drag'n'dropped several files:
+432=Programul %PROG_NAME% poate accepta doar un fiser la un moment dat
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+440=Utilizarea fisierului binar ca o arhiva %PROG_EXTU% text intreg (plain-text)
+441=Introduceti data offset-ului
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=Actualizare
+451=Verific actualizarea programului %PROG_NAME% pe Internet
+452=Programul se conecteaza la site-ul web al companiei Elcom pentru a lua informatii\r\ndespre cea mai recenta versiune a programului %PROG_NAME%. Nu va fi nimic trimis catre Elcom\r\n(nici chiar numarul versiunii curente). Asigurati-va ca sunteti conectat si\r\napoi apasati "Ok"; sau "Cancel" pentru a renunta.
+453=Asteptati va rog
+454=Ma conectez la siteul web al companiei Elcom...
+455=Nu pot sa extrag informatii despre versiunea curenta
+456=WININET.DLL nu este instalat
+457=Conectare oprita
+458=Nu ma pot conecta la site-ul web
+459=Aveti cea mai noua versiune a programului %PROG_NAME%
+460=Actualizarea este disponibila, cea mai noua versiune este %s.\r\nO puteti lua de la adresa %s.
+
+; New "About" dialog messages
+470=Stiri despre produs:
+471=Raspunsuri la intrebari frecvente (FAQ):
+472=Software pentru recuperare de parole:
+473=Feedback:
+474=Pagina Web a companiei Elcom:
+
+480=Ajutor
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=Invoc dialogul de configurare avansata a textului intreg (plaintext)
+491=Configurare avansata a textului intreg (plaintext)
+492=Fisier criptat
+493=Selectati fisierul criptat...
+494=Fisierul text intreg (plaintext)
+495=Selectati fisierul text intreg (plaintext)...
+496=Date binare
+497=Continutul arhivei
+498=Dimensiunea datei:
+499=Offset-ul datei:
+500=Legatura catre fisierele din arhiva care se potrivesc
+501=Pornesc din:
+502=Sterg campul 'Pornesc de la'
+503=Campul 'Pornesc de la' contine valori invalide.\r\nStergeti-l si apoi reluati atacul.
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=versiune
+
+520=Fisierul cheie RSA nu poate fi gasit
+521=Fisierul cheie RSA este corupt
+522=Fisierul cheie RSA este invalid
+
+; new for 3.50
+530=Avansat
+531=Optiuni avansate
+532=Folosesc inceputul cunoscut al fisierului pentru arhive stocate (hex)
+533=Folosesc intotdeauna motorul de atac optimizat pentru WinZIP daca probabilitatea este mai mare decat
+534=Bytes cunoscuti:
+535=Aceasta arhiva a fost creata cu WinZIP cu o probabilitate de %d%%.\r\nDoriti sa folosec motorul de atac optimizat pentru WinZIP?
+536=Campul "Bytes cunoscuti" este invalid. Va rugam corectati-l si apoi relansati atacul\r\n(Bytes ar trebui sa urmeze unul dupa altul fara campuri goale intr-o forma hexa).
+; status window messages
+537=Folosesc inceputul cunoscut al fisierului.
+538=Folosesc motorul de atac optimizat pentru WinZIP.
+
+540=Aceasta arhiva a fost creata cu versiunea %PROG_EXTU% care nu este suportata(inca) de programul %PROG_NAME%.
+541=Testez dictionarul
+
+550=Sfarsit la:
+551=Sterg parola de sfarsit
+552=Lungimea parolei de sfarsit nu se potriveste cu lungimea maxima a parolei
+553=Parola de sfarsit invalida, nu se potriveste cu intervalul selectat
+554=Masca nu se potriveste cu parola de sfarsit
+555=Nu pot porni atacul.\r\nParola de inceput este mai mare sau egala cu parola de sfarsit.
+556=Atac oprit la parola '%s'.
+
+; New messages at 14.11.2000
+560=Atacul text intreg (Plain-text) nu se poate aplica pentru arhive ACE si RAR
+561=Pentru a executa un atac text intreg (Plain-text) trebuie sa folositi arhive de acelasi tip
+
+; New messages at 18.01.2000
+565=Nu pot efectua atacul: metoda de compresie necunoscuta
+566=Avertizare: compresie deflate64
+
+; Messages for PDF 24.01.2000
+570=Caut pentru
+571=Parola utilizatorului
+572=Parola proprietarului
+573=Orice parola
+574=Utilizator
+575=Proprietar
+576=Nu pot deschide documentul
+577=Acesta nu este un document %PROG_EXTU%
+578=Acest document nu este criptat
+579=Handler de criptare gresit\r\n(Aceasta metoda de protectie nu este inca suportata)
+580=Parola utilizatorului este goala astfel ca este posibila o descriptare instant.
+581=Parola proprietarului este goala astfel ca este posibila o descriptare instant.
+582=Doriti sa porniti atacul în orice caz ?
+583=Decriptez acest document
+584=Document decriptat cu succes.
+585=Document decriptat eronat.
+586=Introduceti parola pentru decriptare
+587=Parola pe care ati introdus-o este incorecta
+588=Nu pot extrage chiea documentului!
+589=Acest document a fost creat cu utilitarul FileOpen.
+590=Versiunea de evaluare a programului %PROG_NAME% nu poate decripta documente mai mari decat 64Kb.
+591=Decriptez acum
+592=Pornesc atacul
+593=Doriti sa-l decriptam acum?
+594=Folosesc intructiuni MMX
+595=Acest document a fost protejat cu handler Rot13.
+
+600=Caut cheie
+601=optiuni de cautare a cheilor
+602=Decriptez documentul folosind aceasta cheie
+603=Cheia documentului:
+604=Atacul cautarii cheii nu este aplicabil pentru acest document
+605=Valoarea 'Pornesc de la' este incorecta.
+606=Pornesc atacul cautarii cheii...
+607=Valoarea 'Sfarsit la ' este incorecta.
+608=Cheia pentru acest document a fost gasita.
+609=Cheia de criptare
+610=Copiez cheia de criptare in clipboard
+611=Salvez cheia de criptare in fisier
+612=Cheie de criptare recuperata cu succes!
+613=Cautarea cheii este in desfasurare, am procesat %s din %s chei
+614=Cheie invalida pentru acest document.
+615=Folosec cod multi-procesor
+616=Pornesc de la blocul:
+617=Sfarsit la blocul:
+618=(Valoare maxima = 65535)
+619=Blocul curent:
+
+630=Folosesc recuperarea garantata pentru arhive WinZIP in loc de text intreg (plain-text)
+631=Pornesc recuperarea garantata WinZip...
+632=Recuperarea WinZip este in desfasurare,
+633=stagiul %d/%d
+634=incerc #
+636=Recuperarea garantata pentru arhive WinZIP
+637=Nota: acest fisier a fost creat cu WinZip; puteti selecta "Recuperarea garantata pentru arhive WinZIP" pentru a decripta fisierul fara a tine cont de timp (cateodata chiar si cateva ore) si de lungimea parolei si de complexitate.
+638=Imi pare rau, recuperarea garantata pentru arhive WinZIP nu este disponibila pentru acest fisier. Cititi fisierul de ajutor pentru detalii.
+639=Starea recuperarii garantate pentru arhive WinZIP nu poate fi salvata. Chiar doriti sa o opriti?
+
+650=Pornesc atacul forta bruta...
+651=Pornesc atacul masca...
+652=Fisierul "%s" este deschis.
+
+660=Avertizare: doar %d din %d pagina(i) au fost decriptate datorita limitarii versiunii demo.
+661=%d erorari de format ignorate in timpul decriptarii. Fisierul de iesire ar putea fi incomplet.
+662=Eroare  %d de decriptare a documentului.
+663=Handler: %s.
+664=Handler necunoscut
+665=Acest document a fost creat cu handler de criptare '%s'.\r\nAceasta metoda de protectie nu este suportata.
+666=Nu pot deschide documentul, eroare %d
+
+667=Total chei
+668=Viteza medie (chei pe secunda)
+
+670=Folosesc cod optimizat pentru
+671=procesoare Non-MMX
+672=Intel PII/PIII/Celeron
+673=AMD Athlon
+
+; 15/07/2002
+680=Parola din chei
+681=Pornesc atacul 'Parola din chei'...
+682=Cel putin o valoare a cheii este invalida (verificati tab-ul 'Text intreg (Plain-text)').
+683=Chei: [ %08x %08x %08x ]
+684=Primele sase simboluri ale parolei "Pornesc de la" nu conteaza pentru acest atac.
+685=este o parola valida pentru aceste chei
+686=Acest atac este disponibil doar pentru versiunile intregistrate ale programului %PROG_NAME%!
+687=WZ_Stage%d: incerc %02x
+688=GUAWZ: cazul special a fost gasit. Atacul s-ar putea sa nu fie un succes, consultati fisierul de ajutor pentru detalii.
+689=Retineti ca arhivele create cu Winzip 8.1 sau mai nou sunt invulnerabile la acest atac.
+; End of message file
+

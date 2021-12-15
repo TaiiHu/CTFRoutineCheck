@@ -1,0 +1,963 @@
+; AZPR language file
+; ==================
+
+; blank lines and lines starting from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, do NOT add this formating characters if original string doesn't
+; use them
+
+;
+; Special fields, they will be used later like %FIELD_NAME%
+; 23/08/2000 Now these fields defined internally by program
+;
+;PROG_NAME=AZPR
+;PROG_FULLNAME=Advanced ZIP Password Recovery
+;PROG_VER=3.0
+;ASAVE_FILE=~azpr.azr
+;LOGFILE=azpr.log
+;LANGFILE_VERSION=3.0
+;PROG_EXTU=ZIP
+;PROG_EXT=zip
+;PROG_NAME_EXT=azr
+;
+; File information
+; Your name (if you so wish) and your language name defined here
+;
+TRANSLATOR=Altech.
+;TRANSLATOR=Elcom Ltd.
+LANGUAGE=Japanese
+;LANGUAGE=English
+
+;
+; You can define national characters to use with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; First, define non-Latin capital letters
+FOREIGNCAPS=
+; and then define non-Latin small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=
+; if your language doesn't use non-Latin characters, (or characters
+; can be only in upper or lowercase), leave these fields empty.
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+
+; Password range messages
+10=パスワードの範囲を解析中...
+;10=Analysing password range...
+11=最小のパスワード長が無効です。開始パスワードが一致しません。最小長が調整されました。
+;11=Invalid minimal password length. It does not match the starting password. Minimal length has been adjusted.
+
+; Starting password messages
+12=開始パスワードを解析中...
+;12=Analysing starting password...
+13=パスワードから開始しています
+;13=Starting from password
+14=最終パスワード:
+;14=Last password:
+
+; Password length messages
+15=パスワードの長さ =
+;15=Password length =
+16=実行するパスワード:
+;16=passwords to do:
+
+; Mask messages
+17=マスクされないシンボルの数 =
+;17=Number of not-masked symbols =
+
+; Dictionary messages
+18=ディクショナリーアタックを開始...
+;18=Starting dictionary attack...
+
+; Registration messages
+20=は登録されました!
+;20=is now registered !
+21=開始します
+;21=launched
+;21=launched, registered version
+22=開始します、未登録バージョン、いくつかの機能が制限されます
+;22=launched, unregistered version, some features disabled
+23=%PROG_NAME% バージョン %PROG_VER% - 登録済み
+;23=%PROG_NAME% version %PROG_VER% - Registered
+24=%PROG_NAME% バージョン %PROG_VER% - 未登録
+;24=%PROG_NAME% version %PROG_VER% - Not registered
+
+; Autobackup messages
+30=自動バックアップを実行中...
+;30=Performing autobackup...
+31=自動保存ディレクトリが未定義です。使用するパス:
+;31=Auto-save directory not defined. Using path:
+32=自動保存パスが無効
+;32=Auto-save path is invalid
+33=自動保存のフォルダーを選択して下さい
+;33=Please select an auto-save folder
+34=自動保存パスの選択をキャンセルしました。自動保存は出来ません
+;34=Auto-save path selection cancelled. Auto-save now disabled
+35=自動保存パスが無効、または選択されていません。無効でよろしいですか?
+;35=Auto-save path is invalid or is not selected. Disable auto-save ?
+36=自動保存ファイルが未定義です。'%ASAVE_FILE%' ファイルを使用中
+;36=Auto-save file not defined. Using '%ASAVE_FILE%' file
+
+; Interface messages
+40=-  標題なし
+;40=-  Untitled
+41=終了する前にプロジェクトを保存しますか?
+;41=Do you want to save your project before quitting ?
+42=シャットダウン
+;42=shutdown
+43=ソースファイルをオープンしています
+;43=Trying to open source file
+44=ファイル
+;44=File
+45=正常にオープンしました
+;45=successfully opened
+
+; Project Messages
+50=新しいプロジェクトが作成されました
+;50=New project created
+
+; Result messages
+60=パスワードが正常に回復されました !
+;60=Password successfully recovered !
+61=暗号キーが正常に回復されました !
+;61=Encryption keys successfully recovered !
+62=はこのファイルに有効なパスワードです
+;62=is a valid password for this file
+
+; Button captions
+70=開く
+;70=Open
+71=保存
+;71=Save
+72=開始 !
+;72=Start !
+73=停止
+;73=Stop
+74=文字セット
+;74=Charset
+75=ベンチマーク
+;75=Benchmark
+76=登録
+;76=Register
+77=ヘルプ
+;77=Help
+78=ソフトについて
+;78=About
+79=終了
+;79=Quit
+
+; Button hints
+80=新しいプロジェクトの作成
+;80=Create a new project
+81=プロジェクトを開く...
+;81=Open project...
+82=プロジェクトの保存
+;82=Save project
+83=回復の開始
+;83=Start recovery
+84=回復の停止
+;84=Stop recovery
+85=文字セットの設定...
+;85=Custom charset...
+86=スピードテストの実行
+;86=Do speed-test
+87=ヘルプコンテンツ
+;87=Help contents
+88=%PROG_NAME%について
+;88=About %PROG_NAME%
+89=%PROG_NAME%の終了
+;89=Quit %PROG_NAME%
+
+90=%PROG_NAME%のコピーを登録
+;90=Register your copy of %PROG_NAME%
+
+91=%PROG_EXTU%ファイルをプロジェクトにロード...
+;91=Load %PROG_EXTU%-file into the project...
+92=辞書ファイルの選択...
+;92=Select dictionary file...
+93=プレーンテキストファイルの選択...
+;93=Select plain-text file...
+94=自動保存ディレクトリの選択...
+;94=Select auto-save directory...
+95=開始パスワードのクリア
+;95=Clear starting password
+96=マスクのクリア
+;96=Clear mask
+97=全てのローマ字 + 全ての数字 + 全ての特殊文字
+;97=All latin + all digits + all special
+
+98="開始"フィールドのクリア
+;98=Clear "start from" field
+99=パスワードを検索
+;99=Search for password
+100=このキーを使用して%PROG_EXTU%を復号
+;100=Decrypt %PROG_EXTU% archive using these keys
+101=暗号キーのロード
+;101=Load encryption keys
+102=スタートラインのクリア
+;102=Clear start line
+
+; Interface captions
+110=暗号化された%PROG_EXTU%ファイル
+;110=Encrypted %PROG_EXTU%-file
+111=辞書オプション
+;111=Dictionary options
+112=辞書ファイルパス:
+;112=Dictionary file path:
+113=パスワード長オプション
+;113=Password length options
+114=最小パスワード長 =
+;114=Minimal password length =
+115=最大パスワード長 =
+;115=Maximal password length =
+
+116=アタックの種類
+;116=Type of attack
+117=ブルートフォース
+;117=Brute-force
+118=マスク
+;118=Mask
+119=辞書
+;119=Dictionary
+120=プレーンテキスト
+;120=Plain-text
+
+121=ブルートフォース範囲オプション
+;121=Brute-force range options
+122=All printable
+;122=All printable
+123=スペース
+;123=Space
+124=全てのスペシャルシンボル (!@...)
+;124=All special symbols (!@...)
+125=全ての大文字 (A - Z)
+;125=All caps latin (A - Z)
+126=全ての小文字 (a - z)
+;126=All small latin (a - z)
+127=全ての数字 (0 - 9)
+;127=All digits (0 - 9)
+128=ユーザ定義
+;128=User-defined
+129=開始文字:
+;129=Start from:
+130=マスク:
+;130=Mask:
+131=オプション
+;131=Options
+132=トレーの最小化
+;132=Minimize to tray
+133=%LOGFILE%へのログを有効に
+;133=Enable logging to %LOGFILE%
+134=ファイルを変更する前にバックアップを作成
+;134=Make backup before file changing
+135=プロジェクトの変更を知らせる
+;135=Prompt if project is changed
+136=マスクシンボル:
+;136=Mask symbol:
+137=自動保存
+;137=Auto-save
+138=常にプロジェクトを保存
+;138=Save project every
+139=履歴
+;139=minutes
+140=優先度オプション
+;140=Priority options
+141=バックグランド
+;141=Background
+142=高
+;142=High
+143=現在のパスワード:
+;143=Current password:
+144=ステータスウィンドウ
+;144=Status window
+145=経過表示
+;145=Progress indicator
+146=キャラクタ
+;146=character(s)
+147=精密変化?
+;147=Smart mutations
+148=全ての可能な大小英文字のコンビネーションを試みる
+;148=Try all possible upper/lower case combinations
+149=自動保存ファイル名:
+;149=Auto-save file name:
+150=自動保存ディレクトリ:
+;150=Auto-save directory:
+151=平均速度:
+;151=Average speed:
+152=経過時間:
+;152=Time elapsed:
+153=残り時間:
+;153=Time remaining:
+154=パスワード長 =
+;154=Password length =
+155=トータル:
+;155=total:
+156=処理済み:
+;156=processed:
+157=辞書アタックを終了しました
+;157=Dictionary attack in progress, processed
+158=パスワード
+;158=password(s)
+159=プログレスバー更新インターバル
+;159=Progress bar update interval
+160=ms
+161=スタートライン #
+;161=Start line #
+162=プレーンテキストオプション
+;162=Plain-text options
+163=プレーンテキストファイルパス:
+;163=Plain-text file path:
+164=キー0:
+;164=Key0:
+165=キー1:
+;165=Key1:
+166=キー2:
+;166=Key2:
+
+; Pagecontrol captions
+170=範囲
+;170=Range
+171=長さ
+;171=Length
+172=辞書
+;172=Dictionary
+173=プレーンテキスト
+;173=Plain-text
+174=自動保存
+;174=Auto-save
+175=オプション
+;175=Options
+
+; Statistics messages
+180=全パスワード
+;180=Total passwords
+181=合計時間
+;181=Total time
+182=平均速度(パスワード/秒)
+;182=Average speed (passwords per second)
+183=このファイルのパスワード
+;183=Password for this file
+184=16進のパスワード
+;184=Password in HEX
+185=見つかりません
+;185=Not found
+186=%PROG_FULLNAME% 統計:
+;186=%PROG_FULLNAME% statistics:
+187=パスワードをクリップボードにコピー
+;187=Copy password to the Clipboard
+188=16進パスワードをクリップボードにコピー
+;188=Copy HEX password to the Clipboard
+189=保存...
+;189=Save...
+190=パスワードをファイルに保存
+;190=Save password to file
+191=OK
+192=一年以上
+;192=More than one year
+
+193=n/a
+194=暗号キー
+;194=Encryption keys
+195=暗号キーをクリップボードにコピー
+;195=Copy encryption keys to the Clipboard
+196=暗号キーをファイルに保存
+;196=Save encryption keys to file
+
+; User charset captions
+200=ユーザ定義文字セット
+;200=User defined charset
+201=文字セットの定義
+;201=Define your charset
+202=文字セットのロード...
+;202=Load charset...
+203=文字セットの保存...
+;203=Save charset...
+204=文字セットのクリア
+;204=Clear charset
+205=ファイルから文字セットを追加...
+;205=Add charset from file...
+206=OK
+207=キャンセル
+;207=Cancel
+208=OEMエンコーディングに変換
+;208=Convert to OEM encoding
+
+; About box captions
+210=ソフトについて
+;210=About
+211=version %PROG_VER%
+213=%PROG_NAME% ウェブページを開く
+;213=Open %PROG_NAME% WWW-page
+214=Password Recovery ウェブページを開く
+;214=Open Password Recovery Software WWW-page
+215=エルコムソフトウェアウェブページを開く
+;215=Open Elcom Software WWW-page
+
+; Plaintext progress messages
+220=プレーンテキストアタックを実行中、
+;220=Plain-text attack is in progress,
+221=キーの数を減少中
+;221=reducing number of keys
+222=キーを検索中
+;222=searching for keys
+223=全てパスワードを検索しています(9文字以内)
+;223=trying to retrieve any password (up to 9 symbols long)
+224=表示可能なパスワードを検索しています(10文字以内)
+;224=trying to retrieve printable password (up to 10 characters long)
+
+230=%PROG_NAME% %PROG_VER%。処理終了。
+;230=%PROG_NAME% %PROG_VER%. Task finished.
+231=%PROG_NAME%
+232=未登録の%PROG_NAME%では、%UNREG_MAX%文字までのパスワードが回復出来ます
+;232=Unregistered %PROG_NAME% can recover passwords up to %UNREG_MAX% characters long only
+233=アーカイブは正常に復号されました。
+;233=Archive successfully decrypted.
+234=アーカイブの復号エラー。
+;234=Archive decryption error.
+235=復号キーは登録されたバージョンでのみ表示されます。
+;235=Decryption keys are shown in registered version only.
+236=パスワードが見つかりました、しかし長さが評価版の制限を超えています。
+;236=The password has been found, but it's length exceeds evaluation version limitation.
+237=アーカイブから最初のファイルだけが復号されます。
+;237=Only first file from archive will be decrypted.
+
+240=選択されたアーカイブ内に一致するファイルがありません。\r\nファイルの一部を使用してプレーンテキストアタックを実行する場合は、\r\nアーカイブに１つのファイルだけを入れるように変更して下さい。
+;240=No matching files in selected archives. If you'd like to run plaintext\r\nattack using only part of the file, please modify the archives so\r\neach of them will contain one file only.
+241=選択されたアーカイブ内に一致するファイルがありません。\r\nファイルの一部だけを使用してプレーンテキストアタックを実行しますか?
+;241=No matching files in selected archives. Would you like to run the\r\nplaintext attack using only part of the file?
+242=プレーンテキストアタックのステータスは保存されません。\r\n停止しますか?
+;242=Plain-text attack status cannot be saved.\r\nDo you really want to stop it?
+243=プレーンテキストアタックを開始しました
+;243=Plain-text attack started
+
+; Benchmark messages
+250=ベンチマークはブルートフォースにのみ有効です。
+;250=Sorry, the benchmark is available for brute-force and brute-force\r\nwith mask attacks only.
+251=ベンチマーク処理中 ...
+;251=Benchmarking ...
+252=処理するパスワード
+;252=Passwords to process
+253=処理時間
+;253=Work time
+
+;
+; Error messages
+;
+
+; Brute-force
+300=無効なパスワードの範囲または範囲が定義されていません
+;300=Invalid password range or range not defined
+301=開始パスワードが無効です、選択された範囲に一致しません
+;301=Invalid starting password, it does not match a selected range
+302=最大長は最小長より長くなくてはなりません
+;302=Maximum length must be greater than minimum length
+303=パスワードが見つかりません
+;303=Password not found
+
+; Dictionary
+304=辞書ファイルのオープンエラー
+;304=Error opening dictionary file
+305=スタートラインが辞書サイズを超えています
+;305=Start line exceeds dictionary size
+
+; Common
+310=選択されたファイルを保存出来ません
+;310=Can not save to selected file
+311=%PROG_NAME% エラー
+;311=%PROG_NAME% Error
+312=ユーザにより中断されました
+;312=Terminated by user
+313=自動保存パスが選択されていません
+;313=Auto-save path is not selected
+314=無効なプログレスバーの更新インターバル
+;314=Invalid progress bar update interval
+315=このプロジェクトファイルをオープン出来ません
+;315=Can not open this project file
+
+; Archive's open errors
+320=%PROG_EXTU% アーカイブをオープン出来ません
+;320=Can not open %PROG_EXTU% archive
+321=選択されたファイルは %PROG_EXTU% アーカイブではありません
+;321=Selected file is not a %PROG_EXTU% archive
+322=アーカイブは不正または暗号化されたファイルではありません
+;322=Archive corrupted or no encrypted files
+323=キャッシングエラー
+;323=Cashing error
+324=致命的な例外
+;324=Fatal exception
+
+; Quit message
+330=終了
+;330=Quit
+
+; Mask errors
+340=マスクがセットされていません
+;340=Mask not set
+341=マスクのシンボルが見つかりません
+;341=No mask symbols found
+342=マスクが開始パスワードと一致しません
+;342=Mask does not match a starting password
+343=マスクシンボルが定義されていません
+;343=Mask symbol not defined
+
+; Plaintext errors
+350=暗号キーが見つかりません
+;350=Encryption keys not found
+351=選択されたアーカイブには暗号化されたファイルのみが存在します。
+;351=Selected archive contains encrypted files only.
+352=プレーンテキストアタックに十分なデータではありません。
+;352=Not enough data for plaintext attack.
+353=プレーンテキストアタック内部エラー。
+;353=Plaintext attack internal error.
+354=無効な値。
+;354=Invalid value.
+
+;---------------------------------------
+; New message added at December, 14 1999
+
+; Registration messages
+360=登録
+;360=Registration
+361=登録コードを入力して下さい:
+;361=Enter registration code:
+362=%PROG_NAME% をご登録戴きありがとうございます!
+;362=Thank you for registering %PROG_NAME%!
+363=入力されたコードは無効です!
+;363=The code you've entered is invalid!
+
+; Dialog headers
+370=ベンチマーク結果
+;370=Benchmark result
+
+; Partial plain-text attack dialog
+371=ファイルの一部のみを使用してのアタック
+;371=Attack using only part of the file
+372=プレーンテキストのサイズを入力して下さい:
+;372=Enter size of plain-text:
+
+; Error message used with different previously defined error messages
+380=エラー:
+;380=Error:
+
+; When selecting language from options menu
+390=言語:
+;390=Language:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=サイクル %d / %d
+;400=cycle %d of %d
+401=ライン %d / %d
+;401=line %d of %d
+
+; Open filters, | means delimiter
+410=文字セットファイル(*.chr)|*.chr|全てのファイル(*.*)|*.*
+;410=Charset files (*.chr)|*.chr|All files (*.*)|*.*
+411=%PROG_NAME%ステータスファイル(*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|全てのファイル(*.*)|*.*
+;411=%PROG_NAME% status files (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|All files (*.*)|*.*
+412=%PROG_EXTU%ファイル(*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU%ファイル(*.exe)|*.exe|全てのファイル(*.*)|*.*
+412=%PROG_EXTU% files (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% files (*.exe)|*.exe|All files (*.*)|*.*
+413=辞書ファイル(*.dic)|*.dic|テキストファイル(*.txt)|*.txt|全てのファイル(*.*)|*.*
+;413=Dictionary files (*.dic)|*.dic|Text files (*.txt)|*.txt|All files (*.*)|*.*
+414=%PROG_EXTU%ファイル(*.%PROG_EXT%)|*.%PROG_EXT%|全てのファイル(*.*)|*.*
+;414=%PROG_EXTU% files (*.%PROG_EXT%)|*.%PROG_EXT%|All files (*.*)|*.*
+415=テキストファイル(*.txt)|*.txt|全てのファイル(*.*)|*.*
+;415=Text files (*.txt)|*.txt|All files (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=コマンドラインが不正です
+;420=Incorrect command line
+421=ファイルはパスワードで保護された%PROG_EXTU%アーカイブまたはステータスファイルではありません
+;421=The file is not a password-protected %PROG_EXTU%-archive or status file
+
+; Question after plaintext attack if we aren't got a password
+430=パスワードが見つかりません。アーカイブを直ぐに復号されますか?
+;430=The password not found. Do you want to decrypt archive now?
+
+431=マスク長が未登録バージョンの制限を超えています
+;431=Mask length exceeds unregistered version limits
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% は一度に１ファイルのみ扱えます
+;432=%PROG_NAME% can accept only one file at once
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+440=バイナリファイルの使用はプレーンテキスト%PROG_EXTU%の\r\nアーカイブとしてのみとなります
+;440=Allow using binary file as a plain-text %PROG_EXTU% archive
+441=データオフセットを入力して下さい
+;441=Enter data offset
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=更新
+;450=Update
+451=%PROG_NAME%のチェックはインターネット上で更新します
+;451=Check for %PROG_NAME% updates in the Internet
+452=プログラムは%PROG_NAME%の最新バージョンの情報を\r\n得る為にエルコムのウェブサイトに接続しようとしています。\r\nエルコムに何も送ってはおりません(あなたの現在のバージョン番号さえも)。\r\nネットワークに接続していることを確認し、\r\n"OK"または"キャンセル"を押して下さい。
+;452=The program is going to connect to Elcom web site to get information\r\nabout the most recent version of %PROG_NAME%. Nothing will be sent to Elcom\r\n(even your current version number). Make sure that you're online, and\r\npress "OK"; or "Cancel" to decline.
+453=暫くお待ち下さい
+;453=Please, wait
+454=エルコムウェブサイトに接続中...
+;454=Connecting to Elcom web site...
+455=現在のバージョン情報がわかりません
+;455=Cannot retrieve current version info
+456=WININET.DLL がインストールされていません
+;456=WININET.DLL is not installed
+457=接続がキャンセルされました
+;457=Connection cancelled
+458=ウェブサイトに接続出来ません
+;458=Cannot connect to website
+459=%PROG_NAME%のバージョンは最新となっております
+;459=You have newest version of %PROG_NAME%
+460=アップデートが可能です。最新バージョンは、%s。\r\n%sからダウンロード出来ます。
+;460=Update is available, newest version is %s.\r\nYou can download it from %s.
+
+; New "About" dialog messages
+470=製品ニュース:
+;470=Product News:
+471=よくある質問:
+;471=Frequently Asked Questions:
+472=パスワードリカバリーソフトウェア:
+;472=Password Recovery Software:
+473=フィードバックを送信:
+;473=Send Feedback:
+474=エルコムソフトホームページ:
+;474=ElcomSoft Home Page:
+
+480=ヘルプ
+;480=Help
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=アドバンスドプレーンテキスト環境設定ダイアログの呼出し
+;490=Invoke advanced plaintext configuration dialog
+491=アドバンスドプレーンテキスト環境設定
+;491=Advanced plaintext configuration
+492=暗号化ファイル
+;492=Encrypted file
+493=暗号化ファイルの選択...
+;493=Select encrypted file...
+494=プレーンテキストファイル
+;494=Plaintext file
+495=プレーンテキストファイルの選択...
+;495=Select plaintext file...
+496=バイナリデータ
+;496=Binary data
+497=アーカイブコンテンツ
+;497=Archive contents
+498=データサイズ:
+;498=Data size:
+499=データオフセット:
+;499=Data offset:
+500=アーカイブ内のリンクマッチングファイル
+;500=Link matching files in archives
+501=開始:
+;501=Start from:
+502='開始'フィールドのクリア
+;502=Clear 'start from' field
+503='開始'フィールドに無効な値が含まれています。\r\nクリアしてからもう一度実行して下さい。
+;503='Start from' field contains invalid value.\r\nClear it and run the attack again.
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=バージョン
+;510=version
+
+520=RSAキーファイルが見つかりません
+;520=RSA key file not found
+521=RSAキーファイルが不正です
+;521=RSA key file corrupted
+522=RSAキーファイルが無効です
+;522=RSA key file invalid
+
+; new for 3.50
+530=アドバンスド
+;530=Advanced
+531=アドバンスドオプション
+;531=Advanced options
+532=保管されたアーカイブにファイルの既知のスタートを使用(16進)
+;532=Use known start of the file for stored archives (hex)
+533=可能性が大きい場合、常にWinZIPアタックエンジンを使用する
+;533=Always use WinZIP optimized attack engine if probability is greater then
+534=既知のバイト:
+;534=Known bytes:
+535=このアーカイブは%d%%の可能性でWinZIPにて作成されました。\r\nWinZIPアタックエンジンを使用しますか?
+;535=This archive has been created with WinZIP with a probability of %d%%.\r\nDo you want to use WinZIP optimized attack engine?
+536="既知のバイト"フィールドは無効です。訂正して再度アタックエンジンを実行して下さい\r\n(16進フォーム内で、バイトは空のフィールドが無いよう一つ一つ続く必要があります)。
+;536=The "known bytes" field is invalid. Please correct it and run the attack again\r\n(Bytes should follow one by one without empty fields, in a hex form).
+; status window messages
+537=ファイルの既知のスタートを使用。
+;537=Using known start of the file.
+538=winzipアタックエンジンを使用。
+;538=Using winzip optimized attack engine.
+
+540=このアーカイブは%PROG_NAME%がまだサポートしていない%PROG_EXTU%バージョンで作成されいます。
+;540=This archive has been created with %PROG_EXTU% version which is not supported by %PROG_NAME% (yet).
+541=テスト用辞書
+;541=Testing dictionary
+
+550=終了:
+;550=End at:
+551=最終パスワードをクリア
+;551=Clear ending password
+552=最終パスワード長が最大パスワード長と一致しません
+;552=Ending password length does not match maximum password length
+553=最終パスワードが無効です、選択された範囲と一致しません
+;553=Invalid ending password, it does not match a selected range
+554=マスクが最終パスワードと一致しません
+;554=Mask does not match an ending password
+555=アタックが実行出来ません。\r\n開始パスワードが最終パスワードと同じか大きいです。
+;555=Cannot run the attack.\r\nStarting password greater then or equal to ending password.
+556=パスワード'%s'でアタックを中止しました。
+;556=Attack stopped at password '%s'.
+
+; New messages at 14.11.2000
+560=プレーンテキストアタックはACEとRARアーカイブに適用出来ません
+;560=Plain-text attack is not applicable for ACE & RAR archives
+561=プレーンテキストアタックを実行するには同じタイプのアーカイブを使用する必要があります
+;561=To perform plain-text attack you're need to use archives of the same type
+
+; New messages at 18.01.2000
+565=アタックが実行出来ません: 未知の圧縮方法です
+;565=Cannot perform attack: unknown compression method
+566=エラー: deflate64圧縮
+;566=Warning: deflate64 compression
+
+; Messages for PDF 24.01.2000
+570=検索
+;570=Search for
+571=ユーザパスワード
+;571=User password
+572=オーナーパスワード
+;572=Owner password
+573=全てのパスワード
+;573=Any password
+574=ユーザ
+;574=User
+575=オーナー
+;575=Owner
+576=ドキュメントをオープン出来ません
+;576=Cannot open document
+577=これは%PROG_EXTU%ドキュメントではありません
+;577=This is not a %PROG_EXTU% document
+578=このドキュメントは暗号化されていません
+;578=This document is not encrypted
+579=暗号化ハンドラーが違います\r\n(この保護方法はサポートしておりません)
+;579=Wrong encryption handler\r\n(This protection method is not supported yet)
+580=ユーザパスワードが空ですので、即時に復号が可能です。
+;580=User password is empty so instant decryption possible.
+581=オーナーパスワードが空ですので、即時に復号が可能です。
+;581=Owner password is empty so instant decryption possible.
+582=アタックを開始しますか?
+;582=Do you want to start the attack anyway?
+583=このドキュメントを復号する
+;583=Decrypt this document
+584=ドキュメントは正常に復号されました。
+;584=Document successfully decrypted.
+585=ドキュメント復号エラー。
+;585=Document decryption error.
+586=復号する為のパスワードを入力して下さい
+;586=Enter password for decryption
+587=入力したパスワードを正しくありません
+;587=The password you've typed is incorrect
+588=ドキュメントキーを取り出せません!
+;588=Cannot retrieve document key!
+589=このドキュメントはFileOpenユーティリティで作成されました。
+;589=This document has been created with FileOpen utility.
+590=%PROG_NAME%の評価版では64Kb以上のドキュメントは復号出来ません。
+;590=Evalution version of %PROG_NAME% cannot decrypt documents larger then 64Kb.
+591=直ぐに復号
+;591=Decrypt now
+592=アタック開始
+;592=Start the attack
+593=直ぐに復号をしますか?
+;593=Do you want to decrypt it now?
+594=MMXインストラクションを使用
+;594=Use MMX instructions
+595=このドキュメントはRot13ハンドラーで保護されています。
+;595=This document has been protected with Rot13 handler.
+
+600=キー検索
+;600=Key search
+601=キー検索オプション
+;601=Key search options
+602=このキーを使用してドキュメントを復号
+;602=Decrypt document using this key
+603=ドキュメントキー:
+;603=Document key:
+604=キー検索アタックはこのドキュメントに適用しません
+;604=Key search attack is not applicable for this document
+605='開始'の値が正しくありません。
+;605='Start from' value is incorrect.
+606=キー検索アタックを開始しています...
+;606=Starting key search attack...
+607='最終'の値が正しくありません。
+;607='End at' value is incorrect.
+608=このドキュメントのキーが見つかりました。
+;608=The key for this document has been found.
+609=暗号キー
+;609=Encryption key
+610=暗号キーをクリップボードにコピー
+;610=Copy encryption key into the clipboard
+611=暗号キーをファイルに保存
+;611=Save encryption key into the file
+612=暗号キーは正常に回復しました !
+;612=Encryption key successfully recovered !
+613=キー検索中、%s / %s キーを処理しました
+614=このドキュメントには無効なキーです。
+;614=Invalid key for this document.
+615=マルチプロセッサーコードを使用
+;615=Use multi-processor code
+616=開始ブロック:
+;616=Start from block:
+617=終了ブロック:
+;617=End at block:
+618=(最大値 = 65535)
+;618=(Max value = 65535)
+619=現在のブロック:
+;619=Current block:
+
+630=WinZIPアーカイブにはプレーンテキストに代わってギャランティドリカバリーを使用
+;630=Use guaranteed recovery for WinZIP archives instead of plain-text
+631=ギャランティドWinZipリカバリーを開始しています...
+;631=Starting Guaranteed WinZip Recovery...
+632=WinZipリカバリー処理中、
+;632=WinZip Recovery is in progress,
+633=ステージ %d/%d
+;633=stage %d/%d
+634=実行 #
+;634=try #
+636=ギャランティドWinZipリカバリー
+;636=Guaranteed WinZip Recovery
+637=ノート: このファイルはWinZipにて作成されました。パスワードの長さや複雑さに関わらず割に短時間(時には2～3時間)で復号する"ギャランティドWinZipリカバリー"を選択することが出来ます。
+;637=Note: that file has been created with WinZip; you can select "Guaranteed WinZip Recovery" to decrypt the file in a matter of minutes (sometimes a few hours) regardless of the password length and complexity.
+638="ギャランティドWinZipリカバリー"はこのファイルに適用しません。ヘルプファイルの詳細をご参照下さい。
+;638=Sorry, Guaranteed WinZip Recovery is not available for this file. See Help file for details.
+639=ギャランティドWinZipリカバリーステータスは保存出来ません。中止しますか?
+;639=Guaranteed WinZip Recovery status cannot be saved. Do you really want to stop it?
+
+650=ブルートフォースアタックを開始しています...
+;650=Starting brute-force attack...
+651=マスクアタックを開始しています...
+;651=Starting mask attack...
+652="%s" ファイルはオープンされました。
+;652=File "%s" opened.
+
+660=注意: デモ版の制限により %d / %d ページのみが複合されました。
+;660=WARNING: only %d of %d page(s) decrypted due to demo limitations.
+661=復号中に%d フォーマットエラーは無視されました。出力ファイルは不完全かもしれません。
+;661=%d format error(s) ignored during decryption. Output file could be incomplete.
+662=ドキュメント復号エラー %d。
+;662=Document decryption error %d.
+663=ハンドラー: %s。
+;663=Handler: %s.
+664=未知のハンドラー
+;664=unknown handler
+665=このドキュメントは'%s'暗号化ハンドラーにより作成されました。\r\nこのプロテクション方法はサポートしていません。
+;665=This document was created with '%s' encryption handler.\r\nThis protection method is not supported.
+666=ドキュメントをオープン出来ません、エラー %d
+;666=Cannot open document, error %d
+
+667=全キー
+;667=Total keys
+668=平均速度 (キー/秒)
+;668=Average speed (keys per second)
+
+670=オプチマイズされたコードを使用
+;670=Use code optimized for
+671=Non-MMXプロセッサ
+;671=Non-MMX processors
+672=Intel PII/PIII/Celeron
+673=AMD Athlon
+
+; 15/07/2002
+680=パスワードフロムキー
+;680=Password from keys
+681='パスワードフロムキー'アタックを開始しています...
+;681=Starting 'password from keys' attack...
+682=1つ以上のキー値が無効です('プレーンテキスト'タブをチェックして下さい)。
+;682=At least one key value is invalid (check out 'Plain-text' tab).
+683=キー: [ %08x %08x %08x ]
+;683=Keys: [ %08x %08x %08x ]
+684='開始'パスワードの最初の6文字はこのアタックには重要ではありません。
+;684=First six symbols of 'start from' password don't matter for this attack.
+685=はこれらのキーに有効なパスワードです
+;685=is a valid password for these keys
+686=このアタックは%PROG_NAME%の登録されたバージョンでのみ利用可能です!
+;686=This attack is available in registered version of %PROG_NAME% only!
+687=WZ_Stage%d: 実行中 %02x
+;687=WZ_Stage%d: trying %02x
+688=GUAWZ: 特別なケースが見つかりました。アタックは正常にないかもしれません、ヘルプファイルの詳細を参照して下さい。
+;688=GUAWZ: special case has been found. The attack may be not successful, see Help file for details.
+689=Winzip 8.1以上で作成されたアーカイブはこのアタックでは処理出来ません。
+;689=Note that archives created with Winzip 8.1 and higher are invulnerable for this attack.
+
+; 18/07/2002
+690=Intel P4 SSE2
+691=選択されたインストラクションセットは現在のプロセッサでは使用出来ません。
+;691=Selected instructions set cannot be used on current processor.
+
+; 23/07/2002
+692=ACE 2.0アーカイブのサポートは無くなりました。\r\n詳細はヘルプファイルを参照して下さい。
+;692=Support for ACE 2.0 archives has been removed.\r\nMore details in help file.
+693=未知のエラー(ファイルオープン)。テクニカルサポートに問合せて下さい。
+;693=Unknown error (file opening). Please contact to technical support.
+
+; 20/02/2002
+694=メモリが不足しています
+;694=Not enough memory
+695=%PROG_NAME% はマルチボリュームアーカイブをサポートしていません。
+;695=%PROG_NAME% doesn't support multi-volume archives.
+
+622=ドキュメント復号エラー #%d。
+;622=Document decryption error #%d.
+
+; 18/05/2004
+696=アフィニティマスクを使用
+;696=Use affinity mask
+697=このファイルのキー
+;697=Key for this file
+
+700=フルバージョンを注文
+;700=Order Full Version
+701=登録コードを入力
+;701=Enter Registration Code
+702=キャンセル
+;702=Cancel
+703=%PROG_NAME% オーダー
+;703=%PROG_NAME% Order
+704=%PROG_NAME%のフルバージョンをオンラインで直ぐに購入することが出来ます。-- "フルバージョンを注文"ボタンをクリックして下さい。\r\nデリバリーはお支払いの後にメールにて登録コード（トライアル版をフル機能版に変換します）をお送りします。-- オンラインでの支払いはクレジットカードまたは銀行振込がご利用になれます。サーバー上の注文ページでは、あなたの個人情報は厳密に管理されます。
+;704=You can purchase the Full Version of %PROG_NAME% right now, online or offline -- simply click the "Order Full Version" button.\r\nDelivery is done by sending you the registration code (that converts trial version into the fully-functional one) via email immediatelly after your payment is received and verified -- for online payments with a credit card it usually takes just a few minutes. We accept all major Credit Cards (online, by phone or fax), purchase orders, checks and wire transfers. The ordering page is on a secure server, ensuring that your confidential information remains confidential.
+705=%PROG_NAME%のトライアル版では選択された機能は使用出来ません。
+;705=The feature you've selected is not available in the Trial Version of %PROG_NAME%.
+706=選択されたパスワード長はトライアル版では使用出来ません。
+;706=The password length you've selected does not meet the Trial Version limitations.
+707=全ての制限が削除されました。\r\n注意: トライアル版の制限の為、%d / %d ページのみが出力ファイルに書き出されました。\r\nドキュメント全体を復号化するにはフルバージョンを購入して下さい。
+;707=All restrictions have been removed.\r\nWARNING: due to trial version limitations, only %d of %d page(s) have been written to output file.\r\nPlease purchase the full version to decrypt the whole document.
+
+; 28/03/2005
+708=使用している%PROG_NAME%は、制限（詳細はヘルプを参照）付きのフリーのトライアル版です。既に%PROG_NAME%のテストが終了し、あなたのファイルが動作することを確認しましたならば、注文をする為に"%s"を押して下さい。既に注文され登録コードを入手されているのであれば、"%s"ボタンを押してトライアル版からフル機能版に変更して下さい。
+;708=You're using a free trial version of %PROG_NAME%, which has some limitations (see help file for details). If you already tested %PROG_NAME% so you're sure it works on your file(s), press "%s" to place your order. If your order has been already processed and you have got the registration code, press "%s" button to convert this trial version into fully-functional one.
+709=全ての制限が削除されました。\r\n注意: トライアル版の制限の為、%d / %d ページのみが出力ファイルに書き出されました。
+;709=All restrictions have been removed.\r\nWARNING: due to trial version limitations, only %d of %d page(s) have been written to output file.
+710=ヘルプファイル(.chm)表示することが出来ません。
+;710=Sorry, cannot show .chm help files at this machine
+; End of message file

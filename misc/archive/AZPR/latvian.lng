@@ -1,0 +1,568 @@
+; AZPR language file
+; ==================
+
+; blank lines and lines starting from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, do NOT add this formating characters if original string doesn't
+; use them
+
+;
+; Special fields, they will be used later like %FIELD_NAME%
+; 23/08/2000 Now these fields defined internally by program
+;
+;PROG_NAME=AZPR
+;PROG_FULLNAME=Advanced ZIP Password Recovery
+;PROG_VER=3.0
+;ASAVE_FILE=~azpr.azr
+;LOGFILE=azpr.log
+;LANGFILE_VERSION=3.0
+;PROG_EXTU=ZIP
+;PROG_EXT=zip
+;PROG_NAME_EXT=azr
+;
+; File information
+; Your name (if you so wish) and your language name defined here
+;
+TRANSLATOR=Armands Radzuðka
+LANGUAGE=Latvieðu
+
+;
+; You can define national characters to use with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; First, define non-Latin capital letters
+FOREIGNCAPS=ÂÈÇÌÎÍÏÒÔªÐÛÞ
+; and then define non-Latin small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=âèçìîíïòôºðûþ
+; if your language doesn't use non-Latin characters, (or characters
+; can be only in upper or lowercase), leave these fields empty.
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=ÂÇÎÔÛ
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+
+;1=%PROG_NAME% %PROG_VER% %PROG_BUILD%. izlaidums
+
+; Password range messages
+10=Analizçjas paroles simbolu komplekts...
+11=Nepareizs minimâlais paroles garums. Tas neatbilst sâkuma parolei. Minimâlais garums ir izlabots.
+
+; Starting password messages
+12=Analizçjas sâkuma parole...
+13=Sâkuma parole
+14=Beigu parole:
+
+; Password length messages
+15=Paroles garums =
+16=atlikuðâs paroles:
+
+; Mask messages
+17=Nemaskçto simbolu skaits =
+
+; Dictionary messages
+18=Sâkas uzlauðana ar vârdnîcu...
+
+; Registration messages
+20=ir reìistrçta programma!
+;21=palaista, reìistrçta versija
+21=palaista
+22=palaista, nereìistrçta versija, daþas iespçjas atslçgtas
+23=%PROG_NAME%, %PROG_VER% versija - reìistrçta
+24=%PROG_NAME%, %PROG_VER% versija - nereìistrçta
+
+; Autobackup messages
+30=Tiek veikta automâtiskâ rezervçðana...
+31=Automâtiskâs saglabâðanas mape nav norâdîta. Izmantotais ceïð:
+32=Automâtiskâs saglabâðanas ceïð nav derîgs
+33=Lûdzu izvçlieties automâtiskâs saglabâðanas mapi
+34=Automâtiskâs saglabâðanas ceïa izvçle atcelta. Automâtiskâ saglabâðana tagad ir atslçgta
+35=Automâtiskâs saglabâðanas ceïð ir nederîgs vai nav norâdîts. Atslçgt automâtisko saglabâðanu?
+36=Automâtiskâs saglabâðanas fails nav norâdîts. Tiek izmantots '%ASAVE_FILE%' fails
+
+; Interface messages
+40=-  Nenosaukts
+41=Vai pirms beigðanas vçlaties saglabât jûsu projektu?
+42=darba beigas
+43=Mçìinâjums atvçrt sâkuma failu...
+44=Fails
+45=veiksmîgi atvçrts
+
+; Project Messages
+50=Izveidots jauns projekts
+
+; Result messages
+60=Parole veiksmîgi atrasta!
+61=Ðifrçðanas atslçgas veiksmîgi atjaunotas!
+62=ir derîga parole ðim failam
+
+; Button captions
+70=Atvçrt
+71=Saglabât
+72=Sâkt!
+73=Stop
+74=Simbolu saime
+75=Veiktspçja
+76=Reìistrçt
+77=Rokasgrâm.
+78=Par
+79=Beigt
+
+; Button hints
+80=Izveidot jaunu projektu
+81=Atvçrt projektu...
+82=Saglabât projektu
+83=Sâkt meklçðanu
+84=Apturçt meklçðanu
+85=Paðizvçlçta simbolu saime...
+86=Veikt âtruma pârbaudi
+87=Rokasgrâmatas saturs
+88=Par %PROG_NAME%
+89=Beigt %PROG_NAME%
+
+90=Reìistrçt jûsu %PROG_NAME% kopiju
+
+91=Ielâdçt %PROG_EXTU% failu projektâ...
+92=Izvçlçties vârdnîcas failu...
+93=Izvçlçties parastâ teksta failu...
+94=Izvçlçties automâtiskâs saglabâðanas mapi...
+95=Dzçst sâkuma paroli
+96=Dzçst ðablonu
+97=Visi latîòu + visi cipari + visi îpaðie
+
+98=Dzçst lauku "Sâkt no"
+99=Meklçt paroli
+100=Deðifrçt %PROG_EXTU% arhîvu ar ðîm atslçgâm
+101=Ielâdçt ðifrçðanas atslçgas
+102=Dzçst sâkuma rindu
+
+; Interface captions
+110=Ðifrçts %PROG_EXTU% fails
+111=Vârdnîcas uzstâdîjumi
+112=Vârdnîcas faila ceïð:
+113=Paroles garuma uzstâdîjumi
+114=Minimâlais paroles garums =
+115=Maksimâlais paroles garums =
+
+116=Atraðanas paòçmiens
+117=Uzlauðana
+118=Ðablons
+119=Vârdnîca
+120=Parasts teksts
+
+121=Uzlauðanas darba lauka uzstâdîjumi
+122=Visi izdrukâjamie
+123=Atstarpe
+124=Visi îpaðie simboli (!@...)
+125=Visi lielie latîòu burti (A - Z)
+126=Visi lielie latîòu burti (a - z)
+127=Visi cipari (0 - 9)
+128=Lietotâja norâdîts
+129=Sâkt no:
+130=Ðablons:
+131=Uzstâdîjumi
+132=Minimizçt sistçmtrejâ
+133=Protokolçt %LOGFILE% failâ
+134=Pirms faila pârveidoðanas, izveidot rezerves kopiju
+135=Jautât, ja projekts ir pârveidots
+136=Ðablona simbols:
+137=Automâtiskâ saglabâðana
+138=Projektu saglabât ik pçc
+139=minûtçm
+140=Prioritâtes uzstâdîjumi
+141=Fona
+142=Augsta
+143=Patreizçjâ parole:
+144=Stâvokïa logs
+145=Progresa râdîtâjs
+146=simbols(i)
+147=Saprâtîgâs mutâcijas
+148=Izmçìinât visas iespçjamâs lielo/mazo burtu kombinâcijas
+149=Saglabâðanas fails:
+150=Automâtiskâs saglabâðanas mape:
+151=Vidçjais âtrums:
+152=Pagâjuðais laiks:
+153=Atlikuðais laiks:
+154=Paroles garums =
+155=kopâ:
+156=apstrâdâtas:
+157=Darbojas meklçðana ar vârdnîcu, apstrâdâtas
+158=parole(s)
+159=Progresa joslas atjauninâðanas intervâls
+160=ms
+161=Sâkumrinda #
+162=Parastâ teksta uzstâdîjumi
+163=Parastâ teksta faila ceïð:
+164=0.atsl.:
+165=1.atsl.:
+166=2.atsl.:
+
+; Pagecontrol captions
+170=Darba lauks
+171=Garums
+172=Vârdnîca
+173=Parasts teksts
+174=Autosaglabâðana
+175=Uzstâdîjumi
+
+; Statistics messages
+180=Kopâ paroles
+181=Kopçjais laiks
+182=Vidçjais âtrums (paroles sekundç)
+183=Paroles ðim failam
+184=Parole HEXadecimâli
+185=Nav atrasta
+186=%PROG_FULLNAME% statistika:
+187=Kopçt paroli apmaiòas buferâ
+188=Kopçt HEX paroli apmaiòas buferâ
+189=Saglabât...
+190=Saglabât paroli failâ
+191=Labi
+192=Vairâk par vienu gadu
+
+193=n/p
+194=Ðifrçðanas atslçgas
+195=Kopçt ðifrçðanas atslçgas apmaiòas buferâ
+196=Saglabât ðifrçðanas atslçgas failâ
+
+; User charset captions
+200=Lietotâja norâdîta simbolu saime
+201=Norâdiet savu simbolu saimi
+202=Ielâdçt simbolu saimi...
+203=Saglabât simbolu saimi...
+204=Dzçst simbolu saimi...
+205=Pievienot simbolu saimes no faila...
+206=Labi
+207=Atcelt
+208=Konvertçt uz OEM kodçjumu
+
+; About box captions
+210=Par programmu
+211=versija %PROG_VER%
+213=Atvçrt %PROG_NAME% WWW lapu
+214=Atvçrt Password Recovery Software WWW lapu
+215=Atvçrt Elcom Software WWW lapu
+
+; Plaintext progress messages
+220=Parastâ teksta uzlauðana darbojas,
+221=samazinâs atslçgu skaits
+222=atslçgu meklçðana
+223=mçìinâjums atgût jebkâdu paroli (lîdz par 9 simboliem garu)
+224=mçìinâjums atgût izdrukâjamu paroli (lîdz par 10 simboliem garu)
+
+230=%PROG_NAME% %PROG_VER%. Darbs ir pabeigts.
+231=%PROG_NAME%
+232=Nereìistrçta %PROG_NAME% var atjaunot tikai lîdz %UNREG_MAX% simboliem garu paroli
+233=Arhîvs ir veiksmîgi atðifrçts.
+234=Arhîva atðifrçðanas kïûda.
+235=Âtðifrçðanas atslçgas redzamas ir tikai reìistrçtâ versijâ.
+236=Parole ir atrasta, bet tâs garums pârsniedz izmçìinâðanas versijas ierobeþojumu.
+237=Tikai pirmais arhîva fails tiks atðifrçts.
+
+240=Izvçlçtajos arhîvos nav saskanoði faili. Ja vçlaties palaist parastâ teksta uzlauðanu, izmantojot tikai daïu no ðî faila, lûdzu pârveidojiet arhîvus tâ, lai katrâ no tiem bûtu tikai viens fails.
+241=Izvçlçtajos arhîvos nav saskanoði faili. Vai vçlaties palaist parastâ teksta uzlauðanu izmantojot tikai daïu no faila?
+242=Parastâ teksta uzlauðanas stâvoklis nav iespçjams saglabât.\r\nDVai tieðâm vçlaties to saglabât?
+243=Parastâ teksta uzlauðana sâkta
+
+; Benchmark messages
+250=Atvainojiet, veiktspçjas noteikðana ir iespçjama tikai uzlauðanai un uzlauðanai ar ðablonu.
+251=Veiktspçjas noteikðana ...
+252=Apstrâdâjamâs paroles
+253=Darba laiks
+
+;
+; Error messages
+;
+
+; Brute-force
+300=Nepareizs paroles darba lauks, vai arî lauks nav norâdîts
+301=Nepareiza sâkuma parole, tâ neatbilst izvçlçtajam darba laukam
+302=Maksimâlajam garumam jâbût lielâkam par minimâlo garumu
+303=Parole nav atrasta
+
+; Dictionary
+304=Kïûda atverot vârdnîcas failu
+305=Sâkuma rinda pârsniedz vârdnîcas lielumu
+
+; Common
+310=Nav iespçjams saglabât izvçlçto failu
+311=%PROG_NAME% kïûda
+312=Lietotâja pârtraukts
+313=Nav izvçlçts autosaglabâðanas ceïð
+314=Nepareizs progresa joslas atjauninâðanas intervâls
+315=Nav iespçjams atvçrt ðo projekta failu
+
+; Archive's open errors
+320=Nav iespçjams atvçrt %PROG_EXTU% arhîvu
+321=Izvçlçtais fails nav %PROG_EXTU% arhîvs
+322=Arhîvs ir bojâts vai arî nav ðifrçti faili
+323=Keðoðanas kïûda
+324=Fatâls izòçmums
+
+; Quit message
+330=Beigt
+
+; Mask errors
+340=Ðablons nav norâdîts
+341=Nav atrasts ðablona simbols
+342=Ðablons nesakrît ar sâkuma paroli
+343=Ðablona simbols nav norâdîts
+
+; Plaintext errors
+350=Ðifrçðanas atslçgas nav atrastas
+351=Izvçlçtais arhîvs satur tikai ðifrçtus failus.
+352=Ar parasto tekstu datu atðifrçðanai nepietiek.
+353=Parastâ teksta atðifrçðanas iekðçja kïûda.
+354=Nepareiza vçrtîba.
+
+;---------------------------------------
+; New message added at December, 14 1999
+
+; Registration messages
+360=Reìistrçðana
+361=Ievadiet reìistrçðanas kodu:
+362=Paldies par %PROG_NAME% reìistrçðanu!
+363=Jûsu ievadîtais kods ir nepareizs!
+
+; Dialog headers
+370=Veiktspçjas rezultâts
+
+; Partial plain-text attack dialog
+371=Uzlauzt izmantojot tikai daïu no faila
+372=Ievadiet parastâ teksta lielumu:
+
+; Error message used with different previously defined error messages
+380=Kïûda:
+
+; When selecting language from options menu
+390=Valoda:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=%d. cikls no %d
+401=%d. rinda no %d
+
+; Open filters, | means delimiter
+410=Simbolu saimju faili (*.chr)|*.chr|Visi faili (*.*)|*.*
+411=%PROG_NAME% stâvokïa faili (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|Visi faili (*.*)|*.*
+412=%PROG_EXTU% faili (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% faili (*.exe)|*.exe|Visi faili (*.*)|*.*
+413=Vârdnîcu faili (*.dic)|*.dic|Teksta faili (*.txt)|*.txt|Visi faili (*.*)|*.*
+414=%PROG_EXTU% faili (*.%PROG_EXT%)|*.%PROG_EXT%|Visi faili (*.*)|*.*
+415=Teksta faili (*.txt)|*.txt|Visi faili (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=Nepareiza komandrinda
+421=Ðis fails nav ar paroli aizsargâts %PROG_EXTU% arhîvs vai stâvokïa fails
+
+; Question after plaintext attack if we aren't got a password
+430=Parole nav atrasta. Vai vçlaties ðo arhîvu atðifrçt tûlît?
+
+431=Ðablona garums pârsniedz nereìistrçtas versijas ierobeþojumu
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% var pieòemt vienlaicîgi tikai vienu failu
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+440=Pieïaut izmantot binâro failu kâ parastâ teksta %PROG_EXTU% arhîvu
+441=Ievadiet datu nobîdi
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=Atjauninât
+451=Pârbaudît %PROG_NAME% jaununâjumu Internetâ
+452=Programma gatavojas pieslçgties Elcom mâjas lapai, lai iegûtu informâciju par visjaunâko %PROG_NAME% versiju. Nekas uz Elcom netiks nosûtîts, pat ne jûsu patreizçjâs versijas numurs. Pârliecinieties, ka jûs esat tieðsaistç, un nospiediet "Labi", vai "Atcelt", lai atteiktos.
+453=Lûdzu uzgaidiet
+454=Pievienoðanâs pie Elcom mâjas lapas...
+455=Nav iespçjams iegût patreizçjâs versijas informâciju
+456=WININET.DLL nav instalçts
+457=Savienoðanâs atcelta
+458=Nav iespçjams pievienoties pie mâjas lapas
+459=Jums ir visjaunâkâ %PROG_NAME% versija
+460=Ir pieejams atjauninâjums, jaunâkâ versija ir %s.\r\nTo jûs varat ielâdçt no %s.
+
+; New "About" dialog messages
+470=Jaunumi par izstrâdâjumu:
+471=Bieþâk uzdotie jautâjumi:
+472=Password Recovery Software:
+473=Nosûtît vçstuli:
+474=Elcom mâjas lapa:
+
+480=Palîdzîba
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=Izsaukt parastâ teksta papilduzstâdîjumu dialogu
+491=Parastâ teksta papildus uzstâdîjumi
+492=Ðifrçts fails
+493=Izvçlieties ðifrçto failu...
+494=Parastâ teksta fails
+495=Izvçlieties parastâ teksta failu...
+496=Binârie dati
+497=Arhîva saturs
+498=Datu lielums:
+499=Datu nobîde:
+500=Saistît saskanoðos failus arhîvos
+501=Sâkt no:
+502=Dzçst lauku 'Sâkt no'
+503='Sâkt no' laukâ ir nepareiza vçrtîba.\r\nIzdzçsiet to un sâciet lauðanu vçlreiz.
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=versija
+
+520=RSA atslçgas fails nav atrasts
+521=RSA RSA atslçgas fails ir bojâts
+522=RSA RSA atslçgas fails ir nederîgs
+
+; new for 3.50
+530=Papildus
+531=Papildus uzstâdîjumi
+532=Izmantot zinâmo faila sâkumu uzglabâðanas arhîviem (hex)
+533=Vienmçr izmantot WinZIP optimizçto uzlauðanas paòçmienu, ja varbûtîba >
+534=Zinâmie baiti:
+535=Ðis arhîvs ir izveidots ar WinZIP, ar varbûtîbu no %d%%.\r\nVai vçlaties izmantot WinZIP optimizçtu uzlauðanas paòçmienu?
+536="Zinâmie baiti" lauks ir nepareizi aizpildîts. Lûdzu izlabojiet to un palaidiet uzlauðanu vçlreiz. Baitiem jâbût pçc kârtas vienam pçc otra, bez atstarpçm, hex formâ).
+; status window messages
+537=Izmantot faila zinâmo sâkumu.
+538=Izmantot winzip optimizçto uzlauðanas paòçmienu.
+
+540=Ðis arhîvs ir izveidots ar %PROG_EXTU% versiju, kuru (vçl) %PROG_NAME% neatbalsta.
+541=Vârdnîcas pârbaude
+
+550=Beigt ar:
+551=Dzçst beigu paroli
+552=Beigu paroles garums neatbilst maksimâlajam paroles garumam
+553=Nepareiza beigu parole, tâ neatbilst izvçlçtajam darba laukam
+554=Ðablons neatbilst beigu parolei
+555=Uzlauðanu nav iespçjams palaist.\r\nSâkuma parole ir lielâka, vai vienâda ar beigu paroli.
+556=Uzlauðana apturçta ar paroli '%s'.
+
+; New messages at 14.11.2000
+560=Parastâ teksta uzlauðana nav pielietojama ACE un RAR arhîviem
+561=Lai veiktu parastâ teksta uzlauðanu, jums ir jâizmanto lîdzîga veida arhîvi
+
+; New messages at 18.01.2000
+565=Nav iespçjams veikt uzlauðanu: nepazîstams saspieðanas paòçmiens
+566=Brîdinâjums: deflate64 arhivçðana
+
+; Messages for PDF 24.01.2000
+570=Meklçt
+571=Lietotâja parole
+572=Îpaðnieka parole
+573=Cita parole
+574=Lietotâjs
+575=Îpaðnieks
+576=Nav iespçjams atvçrt dokumentu
+577=Ðis nav %PROG_EXTU% dokuments
+578=Ðis dokuments nav ðifrçts
+579=Nepareizs ðifrçðanas iesâkums\r\n(Ðis aizsardzîbas paòçmiens vçl nav atbalstîts)
+580=Lietotâja parole ir tukða, tâdçjâdi ir iespçjama tûlîtçja deðifrçðana.
+581=Îpaðnieka parole ir tukða, tâdçjâdi ir iespçjama tûlîtçja deðifrçðana.
+582=Vai vienalga vçlaties sâkt uzlauðanu?
+583=Atðifrçt ðo dokumentu
+584=Dokuments veiksmîgi atðifrçts.
+585=Dokumenta atðifrçðanas kïûda.
+586=Ievadiet paroli deðifrçðanai
+587=Jûsu ievadîtâ parole nav pareiza
+588=Nav iespçjams pieprasît dokumenta atslçgu!
+589=Ðis dokuments ir izveidots ar FileOpen programmu.
+590=%PROG_NAME% izmçìinâjuma versija nevar deðifrçt dokumentus, kas lielâki par 64 Kb.
+591=Atðifrçt tûlît
+592=Sâkt atðifrçðanu
+593=Vai vçlaties atðifrçt to tûlît?
+594=Izmantot MMX instrukcijas
+595=Ðis dokuments ir aizsargâts ar Rot13 paòçmienu.
+
+600=Atslçgas meklçðana
+601=Atslçgas meklçðanas uzstâdîjumi
+602=Deðifrçt dokumentu izmantojot ðo atslçgu
+603=Dokumenta atslçga:
+604=Atslçgas meklçðanas uzlauðana ðim dokumentam nav iespçjama
+605='Sâkt no' vçrtîba nav pareiza.
+606=Sâkas atslçgas meklçðanas uzlauðana...
+607='Beigt ar' vçrtîba nav pareiza.
+608=Atslçga ðim dokumentam ir atrasta.
+609=Ðifrçðanas atslçga
+610=Kopçt ðifrçðanas atslçgu apmaiòas buferâ
+611=Saglabât ðifrçðanas atslçgu failâ
+612=Ðifrçðanas atslçga veiksmîgi atrasta!
+613=Darbojas atslçgas meklçðana, apstrâdâtas %s no %s atslçgâm
+614=Nepareiza atslçga ðim dokumentam.
+615=Izmantot daudzprocesoru kodu
+616=Sâkt no bloka:
+617=Bloka beigas:
+618=(Maks. vçrtîba = 65535)
+619=Patreizçjais bloks:
+
+630=Izmantojas WinZIP arhîvu garantçtâ atðifrçðana parastâ teksta vietâ
+631=Sâkas garantçtâ WinZip atðifrçðana...
+632=Darbojas WinZip atðifrçðana,
+633=stadija %d/%d
+634=mçìinâjums #
+636=Garantçtâ WinZip atðifrçðana
+637=Piezîme: ðis fails ir izveidots ar WinZip; jûs varat izvçlçties "Garantçtâ WinZip atðifrçðana", lai atðifrçtu ðo failu daþu minûðu laikâ (daþreiz nepiecieðamas pâris stundas) neskatoties uz paroles garumu un sareþìîtîbu.
+638=Atvainojiet, garantçtâ WinZip atðifrçðana ðim failam nav pieejama. Skatît sîkâk par to rokasgrâmatâ.
+639=Garantçtais WinZip atðifrçðanas stâvoklis nav saglabâts. Vai tieðâm vçlaties to apturçt?
+
+650=Sâkas uzlauðanas atðifrçðana...
+651=Sâkas ðablona atðifrçðana...
+652=Fails "%s" ir atvçrts.
+
+660=BRÎDINÂJUMS: tikai %d no %d lapas(âm) atðifrçtas izmçìinâjuma versijas dçï.
+661=Atðifrçðanas laikâ nav nemtas vçrâ %d formâta kïûda(s). Iespçjams, beigu fails var bût nepilnîgs.
+662=Dokumenta atðifrçðanas kïûda %d.
+663=Paòçmiens: %s.
+664=nepazîstams paòçmiens
+665=Ðis dokuments ir izveidots ar '%s' ðifrçðanas paòçmienu.\r\nÐis aizsardzîbas paòçmiens nav atbalstîts.
+666=Nav iespçjams atvçrt dokumentu, kïûda %d
+
+667=Kopâ atslçgas
+668=Vidçjais âtrums (atslçgas sekundç)
+
+670=Izmantot oprimizçto kodu
+671=Ne MMX procesoriem
+672=Intel PII/PIII/Celeron
+673=AMD Athlon
+
+; 15/07/2002
+680=Parole no atslçgâm
+681=Sâkas atðifrçðana 'parole no atslçgâm'...
+682=Vismaz vienas atslçgas vçrtîba ir nepareiza (sk. ðíirkli 'Parasts teksts').
+683=Atslçgas: [ %08x %08x %08x ]
+684=Pirmie seði simbols no 'Sâkt no' paroles ðajâ atðifrçðanâ nav svarîgi.
+685=ir derîga parole ðîm atslçgâm
+686=Ðî atðifrçðana ir pieejama tikai %PROG_NAME% reìistrçtajâ versijâ!
+687=WZ_Stage%d: mçìinâjums %02x
+688=GUAWZ: îpaðs gadîjums. Atðifrçðana var neizdoties, Sîkâk aprakstîts rokasgrâmatâ.
+689=Jâpiezîmâ, ka ar Winzip 8.1 un jaunâkâm versijâm izveidotie arhîvi atðifrçðanai var nepadoties.
+
+; 18/07/2002
+690=Intel P4 SSE2
+691=Izvçlçto instrukciju komplekts patreizçjam procesoram nav pielietojams.
+
+; 23/07/2002
+692=ACE 2.0 arhîvu atbalsts ir izòemts.\r\nSîkâk rokasgrâmatâ.
+693=Nepazîstama kïûda (faila atvçrðana). Lûdzu sazinieties ar tehnisko atbalstu.
+
+; 20/02/2002
+694=Nepietiek atmiòas
+695=%PROG_NAME% neatbalsta daudzsçjumu arhîvus.
+
+622=Dokumenta deðifrçðanas kïûda #%d.
+
+; End of message file

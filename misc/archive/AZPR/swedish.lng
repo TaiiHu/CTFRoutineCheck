@@ -1,0 +1,467 @@
+; AZPR language file
+; ==================
+;
+; Translation has been made by Lasse B Lundin on March 01, 2001.
+; It presumes you're using codepage 850 in the Swedish version of Win9x/NT/win2K.
+; Codepage 850 is the standard that Swedish Win-versions are shipped with.
+; å=† ä=" ö=" Å= Ä= Ö=(tm)   x/y   x=850 y=Pc8/Dos
+;
+;
+; blank lines and lines started from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, don't use this formating characters if original string doesn't 
+; use it
+;
+; Special fields, it'll be used later like %FIELD_NAME%
+; Please, leave it as is
+;
+PROG_NAME=AZPR
+PROG_FULLNAME=Advanced ZIP Password Recovery
+PROG_VER=3.0
+ASAVE_FILE=~azpr.azr
+LOGFILE=azpr.log
+LANGFILE_VERSION=3.0
+;
+PROG_EXTU=ZIP
+PROG_EXT=zip
+;
+; File information
+; Your name (if you're wish) and your language name define here
+;
+TRANSLATOR=Lasse B Lundin
+LANGUAGE=Swedish
+
+;
+; You can define national characters to use it with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; Firstly, define non-English capital letters
+FOREIGNCAPS=ÅÄÖ
+; and secondly define non-English small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=åäö
+; if your language doesn't use non-English characters (or characters
+; can be only in upper or lowercase, leave these fields empty).
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels
+;
+FOREIGNVOWEL=ÅÄÖ
+;
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+;
+; Program full name
+;
+;1=%PROG_NAME% %PROG_VER% build %PROG_BUILD%
+
+; Password range messages
+10=Analyserar lösenordsområde...
+11=Ogiltig minilängd på lösenord. Det matchar inte start-lösenordet. Minilängden har justerats.
+
+; Starting password messages
+12=Analyserar start-lösenord...
+13=Startar från lösenord
+14=Senaste lösenord:
+
+; Password length messages
+15=Lösenordslängd = 
+16=lösenord kvar:
+
+; Mask messages
+17=Antal icke-kodade tecken = 
+
+; Dictionary messages
+18=Startar ordboksattack...
+
+; Registration messages
+20=är nu registrerad!
+21=startad, registrerad version
+22=startad, oregistrerad version, några finesser bortkopplade
+23=%PROG_NAME% version %PROG_VER% - Registrerad
+24=%PROG_NAME% version %PROG_VER% - Ej registrerad
+
+; Autobackup messages
+30=Utför autobackup...
+31=Autospara-mapp ej definierad.  Använder sökväg:
+32=Autospara-sökvägen är ej giltig
+33=Ange en mapp att Autospara i
+34=Mapp-val för Autospara avbrutet.  Autospara är nu bortkopplat
+35=Mapp-val för Autospara är ogiltigt eller inte valt. Koppla bort Autospara?
+36=Autospara filnamn ej angivet. Använder '%ASAVE_FILE%' som filnamn
+
+; Interface messages
+40=-  Ej döpt
+41=Vill du spara projektet innan du avslutar?
+42=stänger ner
+43=Försöker öppna källfilen
+44=Fil
+45=framgångsrikt öppnad
+
+; Project Messages
+50=Nytt projekt skapat
+
+; Result messages
+60=Lösenordet framgångsrikt funnet!
+61=Krypteringsnyckeln framgångsrikt funnen!
+62=är ett giltigt lösenord för denna fil
+
+; Button captions
+70=Öppna
+71=Spara
+72=Starta!
+73=Stoppa
+74=Teckensnitt
+75=Benchmark
+76=Registrera
+77=Hjälp
+78=Om
+79=Avsluta
+
+; Button hints
+80=Skapa nytt projekt
+81=Öppna projekt...
+82=Spara projekt
+83=Starta dekryptering
+84=Stoppa dekryptering
+85=Valt teckensnitt...
+86=Göra hastighetstest
+87=Hjälp, innehåll
+88=Om %PROG_NAME%
+89=Avsluta %PROG_NAME%
+
+90=Registrera din kopia av %PROG_NAME%
+91=Öppna %PROG_EXTU%-fil till projektet...
+92=Välj ordboksfil...
+93=Välj ren textfil...
+94=Välj Autospara mapp...
+95=Rensa start-lösenord
+96=Rensa mönster
+97=Alla latinska + alla siffror + alla special
+
+98=Rensa "Starta från" fält
+99=Söka efter lösenord
+100=Dekryptera %PROG_EXTU% arkiv med hjälp av dessa nycklar
+101=Läsa in krypteringsnycklar
+102=Rensa startraden
+
+; Interface captions
+110=Krypterad %PROG_EXTU% fil
+111=Ordboks alternativ
+112=Ordboksfil sökväg:
+113=Lösenordslängds alternativ
+114=Minsta lösenordslängd =
+115=Max lösenordslängd =
+
+116=Typ av attack
+117=Råstyrka
+118=Mönster
+119=Ordboks
+120=Ren text
+
+121=Råstyrke-områdes alternativ
+122=Alla utskrivbara
+123=Mellanslag
+124=Alla specialsymboler (!@...)
+125=Alla VERSALA latinska (A - Z)
+126=Alla gemena latinska (a - z)
+127=Alla siffror (0 - 9)
+128=Användardefinierat
+129=Starta från:
+130=Mönster:
+131=Alternativ
+132=Minimera till systemfältet
+133=Logga till %LOGFILE%
+134=Göra backup före filändring
+135=Fråga om projektet blev ändrat
+136=Mönster symbol:
+137=Autospara
+138=Spara projektet var
+139=minut
+140=Prioritets alternativ
+141=Bakgrund
+142=Hög
+143=Nuv. lösenord:
+144=Statusfönster
+145=Förloppsindikator
+146=tecken
+147=Smarta mutationer
+148=Prova alla tänkbara VERSALA/gemena bokstavskombinationer
+149=Autospara filnamn:
+150=Autospara mapp:
+151=Snittshastighet:
+152=Förfluten tid:
+153=Återstående tid:
+154=Lösenordslängd =
+155=totalt:
+156=behandlade:
+157=Ordboksattack pågår, behandlade: 
+158=lösenord
+159=Förloppsindikatorns uppdateringsintervall
+160=ms
+161=Startrad #
+162=Ren text alternativ
+163=Ren text filsökväg:
+164=Nyc.0:
+165=Nyc.1:
+166=Nyc.2:
+
+; Pagecontrol captions
+170=Område
+171=Längd
+172=Ordbok
+173=Ren text
+174=Autospara
+175=Alternativ
+
+; Statistics messages
+180=Totalt antal lösenord
+181=Total tid
+182=Snittfart (lösenord per sekund)
+183=Lösenord för denna fil
+184=Lösenord i HEX
+185=Ej funnen
+186=%PROG_FULLNAME% statistik:
+187=Kopiera lösenordet till Urklipp
+188=Kopiera HEX lösenord till Urklipp
+189=Spara...
+190=Spara lösenordet till fil
+191=OK
+192=Mer än ett år
+
+193=n/a
+194=Krypteringsnycklar
+195=Kopiera krypteringsnycklar till Urklipp
+196=Spara krypteringsnycklar till fil
+
+; User charset captions
+200=Användardefinierat teckensnitt
+201=Definiera ditt teckensnitt
+202=Öppnar teckensnitt...
+203=Spara teckensnitt...
+204=Rensa teckensnitt
+205=Lägga till teckensnitt från fil...
+206=OK
+207=Avbryt
+208=Konvertera till OEM kodning
+
+; About box captions
+210=Om
+211=version %PROG_VER%
+;212=(c) 1999 Vladimir Katalov, Andy Malyshev & Ivan Golubev, Elcom Ltd.
+213=Gå till %PROG_NAME% WWW-sida
+214=Gå till Password Recovery Software WWW-sida
+215=Gå till Elcom Software WWW-sida
+
+; Plaintext progress messages
+220=Ren text-attack pågår,
+221=reducerar antalet nycklar
+222=leter efter nycklar
+223=försöker återskapa alla sorters lösenord (upp till 9 tecken långa)
+224=försöker återskapa utskrivbara lösenord (upp till 10 tecken långa)
+
+230=%PROG_NAME% %PROG_VER%. Uppgift klar.
+231=%PROG_NAME%
+232=Oregistrerad %PROG_NAME% kan bara återskapa lösenord upp till 5 teckens längd
+233=Arkiv framgångsrikt dekrypterat.
+234=Arkiv dekrypteringsfel.
+235=Dekrypteringsnycklar visas i den registrerade versionen bara.
+236=Lösenordet har hittats, men dess längd överstiger utvärderingsversionens begränsningar.
+237=Bara den första filen i arkivet kommer av dekrypteras.
+
+240=Inga matchande filer i valda arkiv. Om du vill använda Ren text-attack\r\n och använda bara en del av filen, ändra då arkiven så att\r\nvar och en av dem innehåller bara en fil.
+241=Inga matchande filer i valda arkiv. Vill du använda Ren text-attack\r\noch använda bara en del av filen?
+242=Ren text-attack status kan inte sparas.\r\nVill du verkligen avsluta?
+243=Ren text-attack startad
+
+; Benchmark messages
+250=Ledsen, benchmark finns bara för Råstyrke- och Råstyrka med mönster-attacker.
+251=Benchmarking...
+252=Lösenord att behandla
+253=Arbetstid
+
+;
+; Error messages
+;
+
+; Brute-force
+300=Ogiltigt lösenordsområde eller område ej angivet
+301=Ogiltigt startlösenord, eller det matchar ej valt område
+302=Maxlängd på lösenord måste vara\r\nlängre än minsta längd på lösen
+303=Lösenord ej funnet
+
+; Dictionary
+304=Fel vid öppnande av ordboksfil
+305=Startraden överskrider ordboksstorlek
+
+; Common
+310=Kan inte spara vald fil
+311=%PROG_NAME% Fel
+312=Avbruten av användaren
+313=Sökväg/Mapp för Autospara ej vald
+314=Ogiltig uppdateringsintervall för förloppsindikatorn
+315=Kan inte öppna denna projektfil
+
+; Archive's open errors
+320=Kan inte öppna %PROG_EXTU% arkiv
+321=Vald fil är inte ett %PROG_EXTU% arkiv
+322=Arkiv korrupt eller har inga krypterade filer
+323=Fel på Cachen
+324=Fatalt undantagsfel
+
+; Quit message
+330=Avsluta
+
+; Mask errors
+340=Mönster ej angivet
+341=Inga mönstersymboler funna
+342=Mönster matchar inte startlösenord
+343=Mönstersymbol ej definierad
+
+; Plaintext errors
+350=Krypteringsnycklar ej funna
+351=Valt arkiv innehåller krypterade filer enbart.
+352=Ej tillräckliga data för Ren text-attack.
+353=Ren text-attack internt fel.
+354=Ogiltigt värde.
+
+; New message added at December, 14 1999
+
+; Registration messages
+360=Registrering
+361=Ange registreringskod:
+362=Tack för att du registrerat %PROG_NAME%!
+363=Koden du angav är ogiltig!
+
+; Dialog headers
+370=Benchmark resultat
+
+; Partial plain-text attack dialog
+371=Attack användande bara del av filen
+372=Ange storlek på Ren text:
+
+; Error message used with different previously defined error messages
+380=Fel:
+
+; When selecting language from options menu
+390=Språk/Language:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=förlopp %d av %d
+401=rad %d av %d
+
+; Open filters, | means delimiter
+410=Teckensnittsfiler (*.chr)|*.chr|Alla filer (*.*)|*.*
+411=%PROG_NAME% statusfiler (*.azr; *.ini)|*.azr;*.azp;*.ini|Alla filer (*.*)|*.*
+412=%PROG_EXTU% filer (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% filer (*.exe)|*.exe|Alla filer (*.*)|*.*
+413=Ordboksfiler (*.dic)|*.dic|Textfiler (*.txt)|*.txt|Alla filer (*.*)|*.*
+414=%PROG_EXTU% filer (*.%PROG_EXT%)|*.%PROG_EXT%|Alla filer (*.*)|*.*
+415=Textfiler (*.txt)|*.txt|Alla filer (*.*)|*.*
+
+; New message added at January, 7 2000
+; Command line messages
+420=Felaktigt kommandoradsargument
+421=Filen är inget lösenordskyddat %PROG_EXTU% arkiv eller en statusfil
+
+; Question after plaintext attack if we haven't got a password
+430=Lösenordet ej funnet.  Vill du dekryptera arkivet nu?
+
+431=Mönsterlängden överstiger den oregistrerade versionens begränsningar
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% kan ta emot bara en fil åt gången
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+
+440=Tillåt binärfil såsom ren text "%PROG_EXTU% arkiv"
+441=Ange VAR i filen (offset) att starta
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=Updatering
+451=Leta efter %PROG_NAME% updateringar på Internet
+452=Programmet kommer att kontakta Elcoms webssajt för att få information\r\n om senaste version av AZPR. Inget kommer att skickas till Elcom\r\n(inte ens nuvarande versionsnummer). Se till att du är uppkopplad, och klicka "OK",\r\n eller "Avbryt" för att avbryta.
+453=Vänta...
+454=Kontaktar Elcoms websajt...
+455=Hittar inte nuvarande versionsinformation
+456=WININET.DLL är inte installerad
+457=Uppkoppling avbruten
+458=Kan inte kontakta websajten
+459=Du har redan senaste versionen av %PROG_NAME%
+460=Updatering finns, senaste version är %s.\r\nDu kan ladda ner den från %s.
+
+; New "About" dialog messages
+470=Produktnyheter:
+471=Ofta Frågade Frågor:
+472=Password Recovery Software:
+473=Skicka Feedback:
+474=Elcoms Hemsida:
+
+480=Hjälp
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=Starta avancerad ren-text konfigureringsdialogen
+491=Avancerad ren-text konfigurering
+492=Krypterad fil
+493=Välj krypterad fil...
+494=Ren-text fil
+495=Välj ren-text fil...
+496=Binära data
+497=Arkiv innehåll
+498=Data storlek:
+499=Data offset:
+500=Länka matchande filer i arkivet
+501=Starta från:
+502=Rensa 'Starta från' fältet
+503='Starta från' fältet innehåller ogiltiga värden.\r\nRensa det, och starta attacken igen.
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=version
+;
+; New from 2001-march-01.
+;
+520=RSA nyckelfil ej funnen
+521=RSA nyckelfil korrupt
+522=RSA nyckelfil ogiltig
+
+; new for 3.50
+530=Avancerat
+531=Acancerade alternativ
+532=Använda känd startpunkt i filen för sparade arkiv (hex)
+533=Använd alltid WinZIP's optimerade attackmotor om sannolikheten är större än
+534=Kända bytes:
+535=Detta arkiv är med sannolikheten %d%% skapat av WinZIP.\r\nVill du använda WinZIP's optimerade attackmotor?
+536="Kända bytes" fältet är ogiltigt.  Korrigera det och kör attacken igen\r\n(Bytes ska komma en efter en utan tomma fält, i hex-format).
+; status window messages
+537=Använder känd startpunkt i filen.
+538=Använder WinZIP's optimerade attackmotor.
+
+540=Detta arkiv har skapats av %PROG_EXTU% version, som inte stödjs av %PROG_NAME% (ännu).
+541=Testar ordbok
+
+550=Slutar vid:
+551=Rensa avslutande lösenord
+552=Avslutande lösenordslängd stämmer inte med max lösenordslängd
+553=Ogiltigt avslutande lösenord, det stämmer inte med ett valt område
+554=Mönster stämmer inte med ett avslutande lösenord
+555=Kan inte starta attacken.\r\nStartlösenord är större än eller samma som avslutande lösenord.
+556=Attacken stoppad vid lösenord '%s'.
+
+; New messages at 14.11.2000
+560=Ren-text attack kan inte användas för ACE & RAR arkiv
+561=För att utföra en Ren-text attack måste du använda arkiv av samma typ
+; New messages at 18.01.2000
+565=Kan inte starta attacken: okänd kompressionsmetod
+566=Varning: deflate64 kompression
+
+; End of message file

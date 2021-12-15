@@ -1,0 +1,532 @@
+; AZPR language file
+; ==================
+
+; blank lines and lines starting from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, do NOT add this formating characters if original string doesn't
+; use them
+
+;
+; Special fields, they will be used later like %FIELD_NAME%
+; 23/08/2000 Now these fields defined internally by program
+;
+;PROG_NAME=AZPR
+;PROG_FULLNAME=Advanced ZIP Password Recovery
+;PROG_VER=3.0
+;ASAVE_FILE=~azpr.azr
+;LOGFILE=azpr.log
+;LANGFILE_VERSION=3.0
+;PROG_EXTU=ZIP
+;PROG_EXT=zip
+;PROG_NAME_EXT=azr
+;
+; File information
+; Your name (if you so wish) and your language name defined here
+;
+TRANSLATOR= Lu Daohong (daohong@netstd.com)
+LANGUAGE=简体中文
+
+;
+; You can define national characters to use with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; First, define non-Latin capital letters
+FOREIGNCAPS=
+; and then define non-Latin small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=
+; if your language doesn't use non-Latin characters, (or characters
+; can be only in upper or lowercase), leave these fields empty.
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+
+; Password range messages
+10=分析密码范围…
+11=无效的最小密码长度，不符合开始密码要求，最小长度已被修改。
+
+; Starting password messages
+12=分析开始密码…
+13=密码恢复开始于
+14=上次的密码：
+
+; Password length messages
+15=密码长度 =
+16=密码:
+
+; Mask messages
+17=未使用掩码的字符数量 =
+
+; Dictionary messages
+18=开始字典攻击...
+
+; Registration messages
+20=已注册!
+21=开始运行
+22=开始运行，未注册的版本，一些功能无法使用
+23=%PROG_NAME% 版本 %PROG_VER% - 已注册
+24=%PROG_NAME% 版本 %PROG_VER% - 未注册
+
+; Autobackup messages
+30=执行自动备份...
+31=自动保存目录未定义，使用路径：
+32=自动保存路径无效
+33=请选择自动保存文件夹
+34=自动保存路径未选择，自动保存功能禁用
+35=自动保存路径无效或者未选定。取消自动保存?
+36=自动保存文件未定义。使用 '%ASAVE_FILE%' 文件名
+
+; Interface messages
+40=-  未命名
+41=是否要在退出前保存项目？
+42=关闭    
+43=正在尝试打开源文件      
+44=文件
+45=成功打开
+
+; Project Messages
+50=新项目已建立
+
+; Result messages
+60=密码成功恢复 !
+61=密钥成功恢复 !
+62=是这个文件的有效密码
+
+; Button captions
+70=打开
+71=保存
+72=开始 !
+73=停止
+74=字符集
+75=基准
+76=注册
+77=帮助
+78=关于
+79=退出
+
+; Button hints
+80=创建一个新的项目
+81=打开项目...
+82=保存项目
+83=开始恢复
+84=停止恢复
+85=自定义字符集...
+86=速度测试
+87=帮助主题
+88=关于 %PROG_NAME%
+89=退出 %PROG_NAME%
+
+90=注册 %PROG_NAME%
+
+91=加载 %PROG_EXTU% 文件...
+92=选择字典文件...          
+93=选择文本文件... 
+94=选择自动保存目录...          
+95=清除开始密码           
+96=清除掩码
+97=全部字母 + 全部数字 + 全部特殊字符
+
+98=清除「开始密码」域
+99=查找密码
+100=使用这些密钥解密 %PROG_EXTU% 文档
+101=加载密钥
+102=清除开始行号
+
+; Interface captions
+110=加密的 %PROG_EXTU% 文件
+111=字典选项
+112=字典文件路径：
+113=密码长度选项
+114=最小密码长度 =
+115=最大密码长度 =
+
+116=攻击类型
+117=暴力攻击
+118=掩码攻击
+119=字典攻击
+120=文本攻击
+
+121=暴力攻击选项
+122=可打印字符
+123=空白键
+124=特殊字符 (!@...)     
+125=大写字母 (A - Z)  
+126=小写字母 (a - z)   
+127=数字 (0 - 9)  
+128=用户自定义
+129=开始密码：
+130=掩码：
+131=选项
+132=最小化为任务栏图标
+133=进行日志记录 %LOGFILE%
+134=在文件改变前备份
+135=如果项目改变，请提示
+136=掩码字符：
+137=自动保存
+138=保存项目间隔
+139=分钟
+140=进程优先级选项
+141=后台运行
+142=高优先级
+143=当前密码：
+144=状态窗口
+145=进度指示：
+146=字符
+147=灵巧组合变化
+148=尝试所有可能的大/小写组合
+149=自动保存文件名：
+150=自动保存目录：
+151=平均速度：
+152=已用时间：
+153=尚需时间：
+154=密码长度 =
+155=总共：
+156=处理：
+157=字典攻击进行中，已处理
+158=密码
+159=过程条更新间隔
+160=毫秒
+161=开始行号
+162=文本攻击选项        
+163=文本文件路径：
+164=Key0:
+165=Key1:
+166=Key2:
+
+; Pagecontrol captions
+170=范围 
+171=长度  
+172=字典      
+173=文本    
+174=自动保存
+175=选项
+
+; Statistics messages
+180=全部密码       
+181=全部时间  
+182=平均速度 (密码/每秒)
+183=此文件的密码 
+184=密码（十六进制）
+185=沒找到
+186=%PROG_FULLNAME% 统计:
+187=将密码复制到剪贴板
+188=将十六进制密码复制到剪贴板
+189=保存...
+190=将密码保存到文件 
+191=确定
+192=超过一年
+
+193=n/a
+194=加密密钥        
+195=将加密密钥复制到剪贴板                 
+196=将加密密钥保存到文件
+
+; User charset captions
+200=用户定义字符集    
+201=定义你的字符集     
+202=加载字符集...  
+203=保存字符集...  
+204=清除字符集   
+205=从文件加载字符集... 
+206=确定
+207=取消
+208=转换到 OEM 编码
+
+; About box captions
+210=关于 
+211=版本 %PROG_VER%
+213=打开 %PROG_NAME% 的网页
+214=打开密码恢复软件的网页
+215=打开 Elcom Software 公司的网页
+
+; Plaintext progress messages
+220=文本攻击正在进行,
+221=减少密钥数量
+222=搜索密钥
+223=尝试获取口令 (最长9个字符)
+224=尝试获取可打印口令 (最长10个字符)
+
+230=%PROG_NAME% %PROG_VER%. 任务结束.
+231=%PROG_NAME%
+232=未注册 %PROG_NAME% 最多只能恢复 %UNREG_MAX% 个字符长度的密码
+233=成功破解文档密码              
+234=密码破解错误.
+235=解密密钥只在注册版本中显示.
+236=密码已找到, 但密码长度超过评估版的限制.
+237=只有压缩文件中的第一个文件将被解密.
+
+240=选择的压缩包中沒有符合的文件。 如果你想要对压缩包中的某一文件进行\r\n文本攻击, 请调整压缩包，使每一个压缩包中只包含一个文件。241=选择的压缩包中没有符合的文件。 你想要使用压缩包中一部分\r\n进行文本攻击吗?
+242=文本攻击状态不能保存。\r\n你真的想要停止吗?
+243=文本攻击开始
+
+; Benchmark messages
+250=抱歉，基准只用在暴力攻击和带掩码的暴力攻击中。
+251=基准测试中 ...
+252=密码处理
+253=工作时间
+
+;
+; Error messages
+;
+
+; Brute-force
+300=无效的密码范围或范围尚未定义
+301=无效的开始密码, 它不符合一个已选择的范围
+302=密码最大长度必須大於最小长度
+303=找不到密码 
+
+; Dictionary
+304=打开字典文件发生错误
+305=开始行超過字典文件大小
+
+; Common
+310=无法保存到选择的文件
+311=%PROG_NAME% 错误
+312=用户中断
+313=自动保存路径未选择
+314=无效的进度条更新间隔                
+315=不能打开这个项目文件
+
+; Archive's open errors
+320=不能打开 %PROG_EXTU% 压缩文件
+321=选择的文件不是一个 %PROG_EXTU% 压缩文件 
+322=压缩文件出错或者未加密
+323=Cashing error
+324=致命错误
+
+; Quit message
+330=退出
+
+; Mask errors
+340=掩码未设定
+341=未找到掩码符号
+342=掩码与开始密码不符合
+343=掩码符号未定义
+
+; Plaintext errors
+350=找不到加密键
+351=选择的压缩包只包含加密文件
+352=沒有足夠的资料进行文本攻击.
+353=文本攻击发生內部错误.
+354=无效值。
+
+;---------------------------------------
+; New message added at December, 14 1999
+
+; Registration messages
+360=注册        
+361=输入注册码:             
+362=感谢您注册 %PROG_NAME%!
+363=您输入的注册码是无效的!
+
+; Dialog headers
+370=基准结果
+
+; Partial plain-text attack dialog
+371=使用部分文件进行文本攻击
+372=输入文本文件的大小:
+
+; Error message used with different previously defined error messages
+380=错误：
+
+; When selecting language from options menu
+390=语言选择：
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=第 %d 循环，共 %d 循环
+401=第 %d 行，共 %d 行
+
+; Open filters, | means delimiter
+410=字符文件 (*.chr)|*.chr|所有文件 (*.*)|*.*
+411=%PROG_NAME% 状态文件 (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|所有文件 (*.*)|*.*
+412=%PROG_EXTU% 文件 (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% 文件 (*.exe)|*.exe|所有文件 (*.*)|*.*
+413=字典文件 (*.dic)|*.dic|文本 (*.txt)|*.txt|所有文件 (*.*)|*.*
+414=%PROG_EXTU% 文件 (*.%PROG_EXT%)|*.%PROG_EXT%|所有文件 (*.*)|*.*
+415=文本文件 (*.txt)|*.txt|所有文件 (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=不正确的命令行
+421=此文件不是一个密码保护的 %PROG_EXTU% 压缩文件或状态文件
+
+; Question after plaintext attack if we aren't got a password
+430=找不到密码. 现在想要解密压缩文件吗?
+
+431=掩码长度超过未注册版本的限制
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% 一次只能接受一个文件
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+440=允许使用二进制文件作为文本文件 %PROG_EXTU% 压缩包
+441=输入数据位移
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=更新
+451=从因特网检查 %PROG_NAME% 更新
+452=此程式将连接至 Elcom 网站, 以取得 %PROG_NAME% 的最新版本信息。过程中不会\r\n传送任何讯息至 Elcom (即使是目前的版本号)。 若你正处于连线状态，\r\n按下 " 确定 " ; 否則按下 " 取消 " 结束更新。
+453=请稍待
+454=正在连接 Elcom 网站 ...
+455=无法取得当前的版本信息
+456=沒有安装 WININET.DLL 
+457=连接取消
+458=不能连接到站点
+459=你的 %PROG_NAME% 已是最新的版本
+460=需要更新, 最新的版本是 %s.\r\n你能從 %s 下載。
+
+; New "About" dialog messages
+470=产品新闻：
+471=常见问题：
+472=密码恢复软件：
+473=反馈信息：
+474=Elcom 首页：
+
+480=帮助
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=调用高级文本配置对话框
+491=高级文本配置
+492=加密文件
+493=选择加密文件...
+494=文本文件
+495=选择文本文件...
+496=二进制数据
+497=压缩文件内容
+498=数据大小: 
+499=数据位移: 
+500=链接压缩包中匹配的文件
+501=开始密码：
+502=清除'开始密码' 字段
+503='开始密码' 字段包含无效的值。\r\n清除并再一次进行攻击。
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=版本
+
+520=找不到 RSA key 文件
+521=不可靠的 RSA key 文件
+522=无效的 RSA key 文件
+
+; new for 3.50
+530=高级
+531=高级选项
+532=在保存的压缩文件上使用已知的文件头 ( 十六进位 )
+533=总是使用 WinZIP 优化攻击引擎，如果可能性大于
+534=已知字节：
+535=此压缩文件有 %d%% 的可能性是由 WinZIP 所产生\r\n你想使用 WinZIP 优化攻击引擎吗?
+536=此 "已知字节" 输入域是无效的。 请更正，並再执行一次\r\n(使用十六进制字节方式，中间不可有空字符)。
+; status window messages
+537=使用已知的文件开头。
+538=使用 WinZIP 优化攻击引擎。
+
+540=此压缩文件为 %PROG_EXTU% 版本所产生, 现在 %PROG_NAME% 还不支持。
+541=测试字典文件
+
+550=结束密码：
+551=清除结束密码
+552=结束密码长度不符合最大密码长度
+553=无效结束密码, 与选取的范围不匹配
+554=掩码和结束密码不匹配
+555=攻击无法运行。\r\n开始密码大雨或等于结束密码。
+556=攻击停止于 '%s'。
+
+; New messages at 14.11.2000
+560=文本攻击不能应用于 ACE & RAR 压缩文件
+561=进行文本攻击, 需要使用相同类型的压缩文件
+
+; New messages at 18.01.2000
+565=不能进行攻击：未知的压缩方式
+566=警告: deflate64 压缩
+
+; Messages for PDF 24.01.2000
+570=查找
+571=用户口令
+572=属主口令
+573=任意口令
+574=用户
+575=属主
+576=不能打开文档
+577=不是 %PROG_EXTU% 文档
+578=文档未加密
+579=错误的加密处理方法\r\n(这种保护方式尚未支持)
+580=用户口令为空，可以使用即时破解
+581=属主口令为空，可以使用即时破解
+582=要开始攻击吗？=
+583=解密本文档
+584=文档成功解密。
+585=文档解密出错。
+586=输入解密口令
+587=口令输入不正确
+588=不能获取文档密钥！
+589=本文档使用FileOpen创建。
+590=评估版 %PROG_NAME% 不能对大于64K的文档进行解密。
+591=开始解密
+592=开始攻击
+593=现在就开始解密吗？
+594=使用MMX指令
+595=这个文档使用BPTE_rot13处理方法进行保护。
+
+600=密钥搜索
+601=密钥搜索选项
+602=使用这个密钥解密文档
+603=文档密钥:
+604=密钥搜索攻击对这个文档不起作用
+605='开始密码' 设置不正确。
+606=开始密钥搜索攻击...
+607='结束密码' 设置不正确。
+608=这个文档的密钥已发现。
+609=加密密钥
+610=将加密密钥复制到剪贴板
+611=将加密密钥保存到文件
+612=加密密钥成功恢复
+613=密钥搜索进行中, 已处理密钥 %s， 共 %s 密钥。
+614=文档无效密钥
+615=使用多处理器编码
+616=起始块:
+617=终止块:
+618=(最大值 = 65535)
+619=当前块:
+
+630=使用确保的Winzip密码恢复方法来代替文本攻击
+631=开始进行确保的Winzip密码恢复
+632=WinZip 恢复进行中，
+633=步 %d/%d
+634=尝试 #
+636=确保的Winzip口令恢复方法
+637=注解: 这个文件使用Winzip生成; 你可以选择使用 "确保的Winzip密码恢复" 在几分钟内（有时数小时），内进行解密，不管密码的长度和复杂性。
+638=抱歉，确保的Winzip密码恢复对这个文件不使用，请参照帮助文件。
+639=确保的Winzip密码恢复状态不能保存，你要停止吗？
+
+650=暴力攻击开始...
+651=掩码攻击开始...
+652=文件 "%s" 打开.
+
+660=警告：由于Demo特性的限制，只有 %d of %d 页内容被解密。
+661=解密过程中略过的格式错误有：%d 个。输出文件不完整。
+662=文档解密错误：%d.
+663=处理过程: %s.
+664=未知过程
+665=本文档使用 '%s' 加密处理过程。\r\n不支持这种保护方法。
+666=不能打开文档，错误 %d
+
+; End of message file
+; End of message file
+

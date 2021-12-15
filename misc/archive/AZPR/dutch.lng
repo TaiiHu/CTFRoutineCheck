@@ -1,0 +1,455 @@
+; AZPR language file
+; ==================
+;
+; blank lines and lines started from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, don't use this formating characters if original string doesn't
+; use it
+
+;
+; Special fields, it'll be used later like %FIELD_NAME%
+; Please, leave it as is
+;
+PROG_NAME=AZPR
+PROG_FULLNAME=Advanced ZIP Password Recovery
+PROG_VER=3.20
+ASAVE_FILE=~azpr.azr
+LOGFILE=azpr.log
+LANGFILE_VERSION=3.20
+
+PROG_EXTU=ZIP
+PROG_EXT=zip
+PROG_NAME_EXT=azr
+UNREG_MAX=5
+
+TRANSLATOR=Teus (benschop@acacia.samara.co.zw)
+LANGUAGE=Dutch
+
+;
+; You can define national characters to use it with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; Firstly, define non-English capital letters
+FOREIGNCAPS=
+; and secondly define non-English small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=
+; if your language doesn't use non-English characters (or characters
+; can be only in upper or lowercase, leave these fields empty).
+
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+
+;
+; Program full name
+;
+1=%PROG_NAME% %PROG_VER% build %PROG_BUILD%
+
+; Password range messages
+10=Analyseren wachtwoord reeks...
+11=Ongeldige minimale wachtwoord lengte. Het past niet bij het begin wachtwoord. Minimale lengte is aangepast.
+
+; Starting password messages
+12=Analyseren begin wachtwoord...
+13=Begint vanaf wachtwoord
+14=Laatste wachtwoord:
+
+; Password length messages
+15=Wachtwoord lengte =
+16=wachtwoorden te doen:
+
+; Mask messages
+17=Aantal niet gemaskeerde symbolen =
+
+; Dictionary messages
+18=Begin woordenboek aanval...
+
+; Registration messages
+20=is nu geregistreerd!
+21=opgestart, geregistreerde versie
+22=opgestart, niet geregistreerde versie, sommige functies uitgeschakeld
+23=%PROG_NAME% versie %PROG_VER% - Geregistreerd
+24=%PROG_NAME% versie %PROG_VER% - Niet geregistreerd
+
+; Autobackup messages
+30=Maken van automatische backup...
+31=Automatisch-bewaren map niet gedefinieerd. Gebruikt pad:
+32=Automatisch-bewaren pad is ongeldig
+33=Selecteer a.u.b. een automatisch-bewaren map
+34=Selectie van automatisch-bewaren pad opgeheven. Automatisch bewaren nu uitgeschakeld
+35=Automatisch-bewaren pad is ongeldig of niet geselecteerd. Automatisch-bewaren uitschakelen?
+36=Automatisch-bewaren bestand niet gedefinieerd. Gebruikt '%ASAVE_FILE%' bestand
+
+; Interface messages
+40=-  Zonder titel
+41=Wilt u uw project bewaren voordat u stopt?
+42=afsluiten
+43=Proberen bronbestand te openen
+44=Bestand
+45=succesvol geopend
+
+; Project Messages
+50=Nieuw project gemaakt
+
+; Result messages
+60=Wachtwoord volledig hersteld!
+61=Codeersleutels succesvol hersteld!
+62=is een geldig wachtwoord voor dit bestand
+
+; Button captions
+70=Openen
+71=Bewaren
+72=Begin!
+73=Stop
+74=Tekenset
+75=Snelheid
+76=Registreer
+77=Hulp
+78=Over
+79=Stop
+
+; Button hints
+80=Maak een nieuw project
+81=Open project...
+82=Bewaar project
+83=Start herstel
+84=Stop herstel
+85=Aangepaste tekenset...
+86=Voer snelheidstest uit
+87=Hulp inhoud
+88=Over %PROG_NAME%
+89=Stop %PROG_NAME%
+
+90=Registreer uw kopie van %PROG_NAME%
+
+91=Laad %PROG_EXTU%-bestand in project...
+92=Selecteer woordenboek bestand...
+93=Selecteer gewone-tekst bestand...
+94=Selecteer automatisch-bewaren map...
+95=Start wachtwoord leegmaken
+96=Masker leegmaken
+97=Alle Latijnse + alle cijfers + alle speciale
+
+98=Maak begin van veld leeg
+99=Zoek naar wachtwoord
+100=Decodeer %PROG_EXTU% archief met deze sleutels
+101=Laad codeersleutels
+102=Start regel leegmaken
+
+; Interface captions
+110=Gecodeerd %PROG_EXTU%-bestand
+111=Woordenboek opties
+112=Woordenboek bestand pad:
+113=Wachtwoord lengte opties
+114=Minimale wachtwoord lengte =
+115=Maximale wachtwoord lengte =
+
+116=Type aanval
+117=Grof-geweld
+118=Masker
+119=Woordenboek
+120=Gewone tekst
+
+121=Grof-geweld reeks opties
+122=Alles afdrukbaar
+123=Spatie
+124=Alle speciale symbolen (!@...)
+125=Alle Latijnse hoofdletters (A - Z)
+126=Alle Latijnse kleine letters (a - z)
+127=Alle cijfers (0 - 9)
+128=Gebruiker-gedefinieerd
+129=Begin vanaf:
+130=Masker:
+131=Opties
+132=Minimaliseer naar bakje
+133=Schakel log in naar %LOGFILE%
+134=Maak reservekopie voor veranderen van bestand
+135=Prompt als project veranderd was
+136=Masker symbool:
+137=Automatisch-bewaren
+138=Bewaar project elke
+139=minuten
+140=Prioriteit opties
+141=Achtergrond
+142=Hoog
+143=Huidige wachtwoord:
+144=Status scherm
+145=Voortgang indicator
+146=teken(s)
+147=Slimme mutaties
+148=Probeer alle mogelijke hoofd/kleine letter combinaties
+149=Automatisch-bewaren bestandsnaam:
+150=Automatisch-bewaren map:
+151=Gemiddelde snelheid:
+152=Verlopen tijd:
+153=Resterende tijd:
+154=Wachtwoord lengte =
+155=totaal:
+156=verwerkt:
+157=Voortgang woordenboek aanval, verwerkt
+158=wachtwoord(en)
+159=Voortgangsbalk bijwerken tussentijd
+160=ms
+161=Begin lijn #
+162=Gewone-tekst opties
+163=Gewone-tekst bestand pad:
+164=Sleutel0:
+165=Sleutel1:
+166=Sleutel2:
+
+; Pagecontrol captions
+170=Reeks
+171=Lengte
+172=Woordenboek
+173=Gewone-tekst
+174=Automatisch-bewaren
+175=Opties
+
+; Statistics messages
+180=Totaal wachtwoorden
+181=Totale tijd
+182=Gemiddelde snelheid (wachtwoorden per seconde)
+183=Wachtwoord voor dit bestand
+184=Wachtwoord in hexadecimaal
+185=Niet gevonden
+186=%PROG_FULLNAME% statistieken:
+187=Kopieer wachtwoord naar het klembord
+188=Kopieer hexadecimaal wachtwoord naar het klembord
+189=Bewaar...
+190=Bewaar wachtwoord in bestand
+191=OK
+192=Meer dan een jaar
+
+193=n/a
+194=Codeersleutels
+195=Kopieer codeersleutels naar het klembord
+196=Bewaar codeersleutels in bestand
+
+; User charset captions
+200=Gebruiker-gedefinieerde tekenset
+201=Definieer uw tekenset
+202=Laad tekenset...
+203=Bewaar tekenset...
+204=Maak tekenset leeg
+205=Voeg tekenset toe vanuit bestand...
+206=OK
+207=Opheffen
+208=Converteren naar OEM codering
+
+; About box captions
+210=Over
+211=versie %PROG_VER%
+;212=(c) 1999 Vladimir Katalov, Andy Malyshev & Ivan Golubev, Elcom Ltd.
+213=Open %PROG_NAME% WWW-pagina
+214=Open Wachtwoord Herstel Programmatuur WWW-pagina
+215=Open Elcom Software WWW-pagina
+
+; Plaintext progress messages
+220=Gewone-tekst aanval is bezig,
+221=reduceren aantal sleutels
+222=zoeken naar sleutels
+223=proberen om alle wachtwoorden te herstellen (tot aan 9 symbolen lang)
+224=proberen om afdrukbare wachtwoorden te herstellen (tot aan 10 tekens lang)
+
+230=%PROG_NAME% %PROG_VER%. Taak klaar.
+231=%PROG_NAME%
+232=Ongeregistreerde %PROG_NAME% kan alleen wachtwoorden herstellen tot %UNREG_MAX% tekens lang
+233=Archief succesvol ontsleuteld.
+234=Archief ontsleuteling fout.
+235=Codeersleutels worden alleen in geregistreerde versie vertoond.
+236=Het wachtwoord is gevonden, maar de lengte ervan overschrijft de evaluatieversie limiet.
+237=Alleen het eerste bestand van het archief zal ontsleuteld worden.
+
+240=Geen passende bestanden in geselecteerde archieven. Als u een gewone-tekst \r\naanval wil gebruiken met slechts een deel van hete bestand, kunt u het archief \r\nveranderen, zodat elk archief slechts één bestand bevat.
+241=Geen passende bestanden in geselecteerde archieven. Wilt u de gewone-tekst\r\naanval gebruiken met slechts een deel van het bestand?
+242=Gewone-tekst aanval status kan niet worden bewaard.\r\nWilt u het echt stoppen?
+243=Gewone-tekst aanval begonnen
+
+; Benchmark messages
+250=Sorry, de snelheidstest is alleen beschikbaar voor de grof-geweld en de grof-geweld \r\nmet masker aanvallen.
+251=Testen van snelheid ...
+252=Te verwerken wachtwoorden
+253=Werk tijd
+
+;
+; Error messages
+;
+
+; Brute-force
+300=Ongeldige wachtwoord reeks of reeks niet gedefinieerd
+301=Ongeldig beginwachtwoord, het past niet bij een geselecteerde reeks
+302=Maximum lengte moet groter zijn dan minimum lengte
+303=Wachtwoord niet gevonden
+
+; Dictionary
+304=Fout bij het openen van woordenboek bestand
+305=Beginregel overschrijdt grootte van woordenboek
+
+; Common
+310=Kan niet bewaren naar geselecteerd bestand
+311=%PROG_NAME% Fout
+312=Afgebroken door gebruiker
+313=Automatisch-bewaren pad is niet geselecteerd
+314=Ongeldige voortgangsbalk bijwerken tussentijd
+315=Kan dit projectbestand niet openen
+
+; zip errors
+320=Kan %PROG_EXTU% archief niet openen
+321=Geselecteerd bestand is geen %PROG_EXTU% archief
+322=Archief beschadigd of geen gecodeerde bestanden
+323=Cashing fout
+324=Fatale uitzondering
+
+; Quit message
+330=Stop
+
+; Mask errors
+340=Masker niet ingesteld
+341=Geen masker symbolen gevonden
+342=Masker past niet bij begin wachtwoord
+343=Masker symbool niet gedefinieerd
+
+; Plaintext errors
+350=Codeersleutels niet gevonden
+351=Geselecteerd archief beval alleen gecodeerde bestanden.
+352=Niet voldoende gegevens voor gewone-tekst aanval.
+353=Gewone-tekst aanval interne fout.
+354=Ongeldige waarde.
+
+; New message added at December, 14 1999
+
+; Registration messages
+360=Registratie
+361=Voer registratie code in:
+362=Dank u voor het registreren van %PROG_NAME%!
+363=De code die u ingevoerd heeft is ongeldig!
+
+; Dialog headers
+370=Snelheidstest resultaat
+
+; Partial plain-text attack dialog
+371=Val aan met slechts een deel van het bestand
+372=Voer grootte van gewone-tekst in:
+
+; Error message used with different previously defined error messages
+380=Fout:
+
+; When selecting language from options menu
+390=Taal:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=cyclus %d van %d
+401=regel %d van %d
+
+; Open filters, | means delimiter
+410=Tekenset bestanden (*.chr)|*.chr|Alle bestanden (*.*)|*.*
+411=%PROG_NAME% status bestanden (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|Alle bestanden (*.*)|*.*
+412=%PROG_EXTU% bestanden (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% bestanden (*.exe)|*.exe|Alle bestanden (*.*)|*.*
+413=Woordenboek bestanden (*.dic)|*.dic|Tekst bestanden (*.txt)|*.txt|Alle bestanden (*.*)|*.*
+414=%PROG_EXTU% bestanden (*.%PROG_EXT%)|*.%PROG_EXT%|Alle bestanden (*.*)|*.*
+415=Tekst bestanden (*.txt)|*.txt|Alle bestanden (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=Foutieve commandoregel
+421=Het bestand is niet een wachtwoord-beveiligd %PROG_EXTU%-archief of statusbestand
+
+; Question after plaintext attack if we haven't got a password
+430=Wachtwoord niet gevonden. Wilt u het archief nu decoderen?
+
+431=Lengte van masker overschrijf de limieten van de ongeregistreerde versie
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% kan slechts één bestand tegelijk accepteren
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a zip archive) file (also used msgs 371-372)
+440=Sta gebruik van binair bestand toe als een gewone-tekst %PROG_EXTU% archief
+441=Voer data offset in
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=Update
+451=Zoeken naar %PROG_NAME% updates op het Internet
+452=Het programma gaat verbinding maken met de Elcom web site om informatie te krijgen \r\nover de meest recente versie van %PROG_NAME%. Er wordt niet naar Elcom verstuurd \r\n(zelfs uw huidige versienummer). Zorg ervoor dat u online bent, en \r\ndruk dan "OK"; of "Opheffen" om te weigeren.
+453=Even geduld a.u.b.
+454=Verbinding maken met de Elcom web site...
+455=Kan informatie over huidige versie niet ophalen
+456=WININET.DLL is niet geinstalleerd
+457=Verbinding verbroken
+458=Kan niet verbinden met de website
+459=U heeft de nieuwste versie van %PROG_NAME%
+460=Update is beschikbaar, nieuwste versie is  %s.\r\nU kunt het downloaden van  %s.
+
+; New "About" dialog messages
+470=Produkt nieuws:
+471=Vaak gestelde vragen:
+472=Wachtwoord herstel programmatuur:
+473=Stuur feedback:
+474=Elcom Home Page:
+
+480=Hulp
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=Oproepen van geavanceerde platte-tekst configuratie scherm
+491=Geavanceerde platte-tekst configuratie
+492=Gecodeerd bestand
+493=Kies gecodeerd bestand...
+494=Platte-tekst bestand
+495=Kies platte-tekst bestand...
+496=Binaire gegevens
+497=Archiefinhoud
+498=Data grootte:
+499=Data offset:
+500=Verbind passende bestanden in archieven
+501=Begin vanaf:
+502=Schoonmaken 'begin vanaf' veld
+503='Begin vanaf' veld heeft een ongeldige waarde.\r\nMaak het leeg en draai de aanval opnieuw.
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=versie
+
+; new for 3.51
+
+530=Geavanceerd
+531=Geavanceerde opties
+532=Gebruik bekend begin van het bestand voor opgeslagen archieven (hex)
+533=Gebruik altijd WinZip geoptimaliseerde aanvalmachine als de waarschijnlijkheid groter is dan
+534=Bekende bytes:
+535=Dit archief is gemaakt met WinZip met een waarschijnlijkheid van %d%%.\r\nWilt u WinZip geoptimaliseerde aanvalmachine gebruiken?
+536=Het veld "bekende bytes" is ongeldig. Corrigeer het en draai de aanval opnieuw\r\n(Bytes moeten een voor een volgen zonder lege velden, in hexadecimale vorm).
+537=Gebruiken van bekend begin van het bestand.
+538=Gebruiken van WinZip geoptimaliseerde aanvalmachine.
+540=Dit archief is gemaakt met  %PROG_EXTU% versie dat (nog) niet ondersteund wordt door %PROG_NAME%.
+541=Testen van map
+550=Einde op:
+551=Eindigend wachtwoord leegmaken
+552=Het eindigend wachtwoord past niet bij de maximale wachtwoordlengte
+553=Ongeldig eindigend wachtwoord, het past niet bij een gekozen bereik
+554=Het masker past niet bij een eindigend wachtwoord
+555=Kan de aanval niet draaien.\r\nHet beginnend wachtwoord is groter dan of gelijk aan het eindigend wachtwoord.
+556=Aanval gestopt op wachtwoord  '%s'
+560=Platte-tekst aanval is niet toepasselijk op ACE & RAR archieven
+561=Om een platte-tekst aanval te doen, hebt u archieven nodig van hetzelfde type
+565=Kan de aanval niet uitvoeren: onbekende compressiemethode
+566=Waarschuwing: deflate64 compressie
+
+; End of message file

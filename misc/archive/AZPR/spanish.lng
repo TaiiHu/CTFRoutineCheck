@@ -1,0 +1,466 @@
+; AZPR, fichero de lenguaje
+; =========================
+
+; las líneas en blanco y la líneas comenzando con punto y coma son ignoradas
+;
+; \r significa retorno de carro
+; \n significa salto de línea
+; Sin embargo, no use estos caracteres de formateo si la cadena original
+; no los utiliza
+;
+; Campos especiales, se utilizarán más adelante, como %FIELD_NAME%
+; Por favor, déjelos como están
+;
+PROG_NAME=AZPR
+PROG_FULLNAME=Advanced ZIP Password Recovery
+PROG_VER=3.20
+ASAVE_FILE=~azpr.azr
+LOGFILE=azpr.log
+LANGFILE_VERSION=3.20
+
+PROG_EXTU=ZIP
+PROG_EXT=zip
+PROG_NAME_EXT=azr
+UNREG_MAX=5
+;
+; Información sobre el fichero
+; Su nombre (si lo desea) y el de su lenguaje se definen aquí
+;
+TRANSLATOR=F. Jarabo
+LANGUAGE=Español
+
+;
+; Puede definir caracteres nacionales para usarlos
+; con el ataque basado en diccionario:
+; ligeras mutaciones y todas las combinaciones posibles de
+; mayúsculas/minúsculas
+; Primero, defina las letras mayúsculas no inglesas
+FOREIGNCAPS=
+; y segundo, defina las letras minúsculas no inglesas
+; (¡en el mismo orden que las mayúsculas!)
+FOREIGNSMALL=
+; si su lenguaje no utiliza caracteres no ingleses (o los caracteres
+; sólo pueden estar en mayúsculas o minúsculas), deje estos campos vacíos.
+
+; Nuevo campo añadido el 7 de enero de 2000
+; Este campo se usa con el ataque basado en diccionario / pequeñas mutaciones para
+; hacer que en las palabras las vocales estén en minúsculas y el resto en mayúsculas
+; (por ejemplo, "password" se convierte en "PaSSWoRD")
+; Este campo sólo contiene vocales (también definidas en el campo FOREIGNCAPS)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR, mensajes                                                             ;
+;----------------------------------------------------------------------------;
+
+;
+; Nombre completo del programa
+;
+1=%PROG_NAME% %PROG_VER% construcción %PROG_BUILD%
+
+; Mensajes de rango de clave
+10=Analizando el rango de la clave...
+11=Longitud mínima de la clave inválida. No coincide con la clave inicial. Ha sido ajustada la longitud mínima.
+
+; Mensajes de clave inicial
+12=Analizando la clave inicial...
+13=comenzando desde la clave
+14=Última clave:
+
+; Mensajes de longitud de clave
+15=Longitud de la clave =
+16=Claves por hacer:
+
+; Mensajes de máscara
+17=Número de símbolos no enmascarados =
+
+; Mensajes de diccionario
+18=Comenzando ataque con diccionario...
+
+; Mensajes de registro
+20=ha sido registrado !
+21=lanzado, versión registrada
+22=lanzado, versión no registrada, algunas características deshabilidadas
+23=%PROG_NAME% versión %PROG_VER% - Registrado
+24=%PROG_NAME% versión %PROG_VER% - No registrado
+
+; Mensajes de copia de seguridad automática
+30=Llevando a cabo copia de seguridad automática...
+31=Directorio de autosalvado no definido. Usando trayectoria:
+32=La trayectoria de autosalvado es inválida
+33=Por favor, elija una carpeta de autosalvado
+34=Selección de trayectoria de autosalvado cancelada. Autosalvado deshabilitado.
+35=Trayectoria de autosalvado inválida o no seleccionada. ¿Deshabilitar autosalvado?
+36=Fichero de autosalvado no definido. Usando fichero '%ASAVE_FILE%'
+
+; Mensajes de interfase
+40=-  Sin título
+41=¿Desea salvar su proyecto antes de salir?
+42=cerrar
+43=Intentando abrir fichero fuente
+44=Fichero
+45=abierto con éxito
+
+; Mensajes de proyecto
+50=Nuevo proyecto creado
+
+; Mensajes de resultado
+60=Clave recuperada con éxito !
+61=Claves de encriptación recuperadas con éxito !
+62=es una clave válida para este fichero
+
+; Rótulos de botones
+70=Abrir
+71=Guardar
+72=Comenzar !
+73=Parar
+74=Juego de caracteres
+75=Pruebas
+76=Registro
+77=Ayuda
+78=Acerca de
+79=Salir
+
+; Sugerencias de botones
+80=Crear un nuevo proyecto
+81=Abrir proyecto...
+82=Salvar proyecto
+83=Comenzar recuperación
+84=Parar recuperación
+85=Juego de caracteres personalizado...
+86=Realizar prueba de velocidad
+87=Contenido de la ayuda
+88=Acerca de %PROG_NAME%
+89=Salir de %PROG_NAME%
+
+90=Registrar su copia de %PROG_NAME%
+
+91=Cargar fichero %PROG_EXTU% en el proyecto...
+92=Seleccionar fichero de diccionario...
+93=Seleccionar fichero de texto...
+94=Seleccionar directorio de autosalvado...
+95=Borrar clave inicial
+96=Borrar máscara
+97=Todas las letras + todos los dígitos + todos los caracteres especiales
+
+98=Borrar principio de campo
+99=Buscar clave
+100=Desencriptar fichero %PROG_EXTU% usando estas claves
+101=Cargar claves de encriptación
+102=Borrar línea de comienzo
+
+; Rótulos de interfase
+110=Fichero %PROG_EXTU% encriptado
+111=Opciones de diccionario
+112=Fichero de diccionario:
+113=Opciones de longitud de clave
+114=Longitud mínima de la clave =
+115=Longitud máxima de la clave =
+
+116=Tipo de ataque
+117=Fuerza bruta
+118=Máscara
+119=Diccionario
+120=Texto simple
+
+121=Opciones de rango de fuerza bruta
+122=Todos los imprimibles
+123=Espacio
+124=Todos los símbolos especiales (!@...)
+125=Todas las mayúsculas (A - Z)
+126=Todas las minúsculas (a - z)
+127=Todos los dígitos (0 - 9)
+128=Definido por el usuario
+129=Comenzar desde:
+130=Máscara:
+131=Opciones
+132=Minimizar a la bandeja
+133=Habilitar registro a %LOGFILE%
+134=Hacer copia de seguridad antes de cambiar el fichero
+135=Avisar si el proyecto ha cambiado
+136=Símbolo de máscara:
+137=Autosalvar
+138=Salvar proyecto cada
+139=minutos
+140=Opciones de prioridad
+141=Fondo
+142=Alta
+143=Clave actual:
+144=Ventana de estado
+145=Indicador de progreso
+146=caracter(es)
+147=Ligeras mutaciones
+148=Intentar todas las combinaciones posibles mayúscula/minúscula
+149=Nombre de fichero de autosalvado:
+150=Directorio de autosalvado:
+151=Velocidad media:
+152=Tiempo transcurrido:
+153=Tiempo restante:
+154=Longitud de la clave =
+155=total:
+156=procesado:
+157=Ataque con diccionario en progreso, procesado
+158=Clave(s)
+159=Intervalo de refresco de la barra de progreso
+160=ms
+161=Linea inicial #
+162=Opciones de texto simple
+163=Fichero de texto simple:
+164=Clav0:
+165=Clav1:
+166=Clav2:
+
+; Rótulos de control de página
+170=Rango
+171=Longitud
+172=Diccionario
+173=Texto simple
+174=Autosalvado
+175=Opciones
+
+; Mensajes estadísticos
+180=Claves totales
+181=Tiempo total
+182=Velocidad media (claves por segundo)
+183=Clave para este fichero
+184=Clave en HEX
+185=No encontrado
+186=Estadísticas de %PROG_FULLNAME%:
+187=Copiar clave al portapapeles
+188=Copiar clave HEX al portapapeles
+189=Salvar...
+190=Salvar clave a fichero
+191=OK
+192=Más de un año
+
+193=n/a
+194=Claves de encriptación
+195=Copiar claves de encriptación al portapapeles
+196=Salvar claves de encriptación a fichero
+
+; Rótulos de juego de caracteres de usuario
+200=Juego de caracteres definido por el usuario
+201=Defina su juego de caracteres
+202=Cargar juego de caracteres...
+203=Salvar juego de caracteres...
+204=Borrar juego de caracteres
+205=Añadir juego de caracteres desde fichero...
+206=OK
+207=Cancelar
+208=Convertir a codificación OEM
+
+; Rótulos de la caja "Acerca de"
+210=Acerca de
+211=versión %PROG_VER%
+;212=(c) 1999 Vladimir Katalov, Andy Malyshev & Ivan Golubev, Elcom Ltd.
+213=Abrir página WWW de %PROG_NAME%
+214=Abrir página WWW de programas de recuperación de claves
+215=Abrir página WWW de Elcom Software
+
+; Mensajes de progreso de texto simple
+220=Ataque de texto simple en progreso,
+221=reduciendo el número de claves
+222=buscando claves
+223=intentando recuperar cualquier clave (hasta de 9 símbolos de longitud)
+224=intentando recuperar clave imprimible (hasta de 10 caracteres de longitud)
+
+230=Tarea %PROG_NAME% %PROG_VER%. finalizada.
+231=%PROG_NAME%
+232=%PROG_NAME% no registrado sólo puede recuperar claves de hasta %UNREG_MAX% caracteres de longitud
+233=Archivo desencriptado con éxito.
+234=Error de desencriptación de archivo.
+235=Las claves de desencriptación sólo se muestran en la versión registrada.
+236=La clave ha sido encontrada, pero su longitud excede a la limitación de la versión de evaluación.
+237=Sólo se desencriptará el primer fichero del archivo.
+
+240=No existen esos ficheros en los archivos seleccionados.\r\nSi desea ejecutar un ataque de texto simple usando sólo \r\nuna parte del fichero, por favor, modifique los archivos \r\nde tal modo que cada uno de ellos sólo contenga un fichero.
+241=No existen esos ficheros en los archivos seleccionados. \r\n¿Desea ejecutar un ataque de texto simple usando sólo \r\nuna parte del fichero?
+242=El estado del ataque de texto simple no puede ser salvado.\r\n¿Realmente desea pararlo?
+243=Ataque de texto simple iniciado
+
+; Mensajes de pruebas
+250=Lo siento, las pruebas sólo están disponibles para ataques \r\nde fuerza bruta y ataques de fuerza bruta con máscara.
+251=Probando ...
+252=Claves para procesar
+253=Tiempo de trabajo
+
+;
+; Mensajes de error
+;
+
+; Fuerza bruta
+300=Rango de la clave inválido o rango no definido
+301=Calave inicial inválida, no concuerda con un rango seleccionado
+302=La longitud máxima ha de ser mayor de la longitud mínima
+303=Clave no encontrada
+
+; Diccionario
+304=Error abriendo el fichero de diccionario
+305=La lïnea inicial excede el tamaño del diccionario
+
+; Común
+310=No puede salvarse al fichero seleccionado
+311=Error en %PROG_NAME%
+312=Terminado por el usuario
+313=Trayectoria de autosalvado no seleccionada
+314=Intervalo de refresco de la barra de progreso inválido
+315=No puede abrirse este fichero de proyecto
+
+;errores de zip
+320=No puede abrirse el archivo %PROG_EXTU%
+321=El fichero seleccionado no es un archivo %PROG_EXTU%
+322=Archivo corrupto o sin ficheros encriptados
+323=Error de ruptura
+324=Excepción fatal
+
+; Mensaje de salida
+330=Salir
+
+; Errores de máscara
+340=Máscara no definida
+341=No se encuentran símbolos de máscara
+342=La máscara no concuerda con una clave inicial
+343=Símbolo de máscara no definido
+
+; Errores de texto simple
+350=Claves de encriptación no encontradas
+351=El archivo seleccionado sólo contiene ficheros encriptados.
+352=Datos insuficientes para un ataque de texto simple.
+353=Error interno de ataque de texto simple.
+
+; Nuevo mensaje añadido el 14 de diciembre de 1999
+
+; Mensajes de registro
+360=Registro
+361=Introduzca el código de registro:
+362=Gracias por registrar %PROG_NAME%!
+363=¡El código que ha introducido es inválido!
+
+; Cabeceras de diálogo
+370=Resultado de las pruebas
+
+; Diálogo de ataque parcial de texto simple
+371=Ataque usando sólo una parte del fichero
+372=Introduzca el tamaño del texto simple:
+
+; Mensaje de error usado con diferentes mensajes de error previamente definidos
+380=Error:
+
+; Cuando se selecciona el lenguaje desde el menú de opciones
+390=Lenguaje:
+
+; Estos mensajes serán utilizados (quizás) con los ataques de texto simple y de diccionario
+; %d significa un número insertado por programa (como en el lenguaje de programación C)
+400=ciclo %d de %d
+401=línea %d de %d
+
+; Filtros de apertura, | significa delimitador
+410=Ficheros de juegos de caracteres (*.chr)|*.chr|Todos los ficheros (*.*)|*.*
+411=%PROG_NAME%, ficheros de estado (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|Todos los ficheros (*.*)|*.*
+412=Ficheros %PROG_EXTU% (*.%PROG_EXT%)|*.%PROG_EXT%|Ficheros SFX-%PROG_EXTU% (*.exe)|*.exe|Todos los ficheros (*.*)|*.*
+413=Ficheros de diccionario (*.dic)|*.dic|Ficheros de texto (*.txt)|*.txt|Todos los ficheros (*.*)|*.*
+414=Ficheros %PROG_EXTU% (*.%PROG_EXT%)|*.%PROG_EXT%|Todos los ficheros (*.*)|*.*
+415=Ficheros de texto (*.txt)|*.txt|Todos los ficheros (*.*)|*.*
+;--------------------------------------
+
+; Nuevos mensajes añadidos el 7 de enero de 2000
+; Mensajes de línea de órdenes
+420=Línea de órdenes incorrecta
+421=El fichero no es un archivo %PROG_EXTU% protegido con clave o un fichero de estado
+
+; Cuestión después de un ataque de texto simple si no hemos obtenido la clave
+430=No se ha encontrado la clave. ¿Desea desencriptar el archivo ahora?
+
+431=La longitud de la máscara excede los límites de la versión no registrada
+
+; Cuando el usuario arrastra y suelta varios ficheros:
+432=%PROG_NAME% sólo puede aceptar un fichero cada vez
+
+;---------------------------------------
+; Nuevos mensajes añadidos el 17 de enero de 2000
+; (se usarán en versiones posteriores)
+
+; Fichero de texto con binario (no un archivo zip) (también usado en mensajes 731-372)
+440=Permitir usar un fichero binario como un archivo %PROG_EXTU% de texto simple
+441=Introducir desplazamiento de los datos
+
+;---------------------------------------
+; Nuevos mensajes añadidos el 3 de marzo de 2000
+;---------------------------------------
+450=Actualizar
+451=Buscar actualizaciones de %PROG_NAME% en Internet
+452=El programa conectara al sitio web de Elcom para obtener \r\ninformación sobre la versión más reciente de %PROG_NAME%. No se \r\nenviará nada a Elcom (sólo su número de versión actual).\r\nAsegúrese de que está en línea y pulse "OK"; o "Cancelar" \r\npara abortar.
+453=Por favor, espere
+454=Conectando al sitio web de Elcom...
+455=No se puede obtener información de la versión actual
+456=WININET.DLL no está instalado
+457=Conexión cancelada
+458=No se puede conectar al sitio web
+459=Tiene ya la última versión de %PROG_NAME%
+460=Actualización disponible, la última versión es %s.\r\nPuede bajarla de %s.
+
+; Nuevos mesajes de diálogo "Acerca de..."
+470=Novedades:
+471=Preguntas Más Frecuentes:
+472=Software de Recuperación de Claves:
+473=Enviar Respuesta:
+474=Página Principal de Elcom:
+
+480=Ayuda
+
+; Mensajes de diálogo de configuración avanzada de texto simple
+; (Esta característica será implementada en futuras versiones de AZPR)
+490=Invocar diálogo de configuración avanzada de texto simple
+491=Configuración avanzada de texto simple
+492=Fichero encriptado
+493=Seleccionar fichero encriptado...
+494=Fichero de texto simple
+495=Seleccionar fichero de texto simple...
+496=Datos binarios
+497=Contenido del archivo
+498=Tamaño de los datos:
+499=Desplazamiento de los datos:
+500=Enlazar ficheros coincidentes en los archivos
+501=Comenzar desde:
+502=Borrar el campo 'comenzar desde'
+503=El campo 'comenzar desde' contiene valor inválido.\r\nBórrelo y ejecute de nuevo el ataque.
+;la siguiente línea comienza con minúsculas porque se usa (o usará)
+; en el medio de la frase...
+510=versión
+
+520=Fichero de clave RSA no encontrado
+521=Fichero de clave RSA corrupto
+522=Fichero de clave RSA no inválido
+
+; nuevo para 3.50
+530=Avanzado
+531=Opciones avanzadas
+532=Usar inicio conocido del fichero para archivos guardados (hex)
+533=Usar siempre motor de ataque optimizado para WinZIP si probabilidad mayor que
+534=Bytes conocidos:
+535=Este archivo ha sido creado con WinZIP con una probabilidad del %d%%.\r\nDesea usar el motor de ataque optimizado para WinZIP?
+536=El campo "bytes conocidos" es inválido. Por favor, corríjalo y ejecute de nuevo el ataque\r\n(Los bytes han de estar uno tras otro sin cmpos vacíos, en forma hex).
+; mensajes de la ventana de estado
+537=Usando inicio del fichero conocido.
+538=Usando motor de ataque optimizado para WinZIP.
+
+540=Este archivo ha sido creado con la versión %PROG_EXTU% que no está soportada por %PROG_NAME% (de momento).
+541=Probando diccionario
+
+550=Fin en:
+551=Borrar clave final
+552=Longitud de clave final no coincide con longitud de clave máxima
+553=Clave final inválida, no coincide con un rango seleccionado
+554=Máscara no coincide con una clave final
+555=No puede ejecutarse el ataque.\r\nClave inicial mayor o igual que clave final.
+556=Ataque detenido en clave '%s'.
+
+; Nuevo mensaje del 14.11.2000
+560=Ataque de texto simple no es aplicable a archivos ACE & RAR
+561=Para llevar a cabo un ataque de texto simple necesitará usar archivos del mismo tipo
+
+; Nuevos mensajes del 18.01.2000
+565=No peude ejecutarse el ataque: método de compresión desconocido
+566=Aviso: compresión deflate64
+
+; Fin de fichero de mensajes

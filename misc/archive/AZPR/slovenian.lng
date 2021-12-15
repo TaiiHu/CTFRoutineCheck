@@ -1,0 +1,459 @@
+; AZPR language file
+; ==================
+
+; blank lines and lines starting from semicolons are ignored
+;
+; \r means carriage return
+; \n means line feed
+; However, do NOT add this formating characters if original string doesn't
+; use them
+
+;
+; Special fields, they will be used later like %FIELD_NAME%
+; 23/08/2000 Now these fields defined internally by program
+;
+;PROG_NAME=AZPR
+;PROG_FULLNAME=Advanced ZIP Password Recovery
+;PROG_VER=3.0
+;ASAVE_FILE=~azpr.azr
+;LOGFILE=azpr.log
+;LANGFILE_VERSION=3.0
+;PROG_EXTU=ZIP
+;PROG_EXT=zip
+;PROG_NAME_EXT=azr
+;
+; File information
+; Your name (if you so wish) and your language name defined here
+;
+TRANSLATOR=Tomaž CURK
+LANGUAGE=Slovenski
+
+;
+; You can define national characters to use with dictionary-based attack:
+; smart mutations & all possible upper/lowercase combinations
+; First, define non-Latin capital letters
+FOREIGNCAPS=ŠÈÆŽÐ
+; and then define non-Latin small letters (in the same order
+; as capitals!)
+FOREIGNSMALL=šèæžð
+; if your language doesn't use non-Latin characters, (or characters
+; can be only in upper or lowercase), leave these fields empty.
+
+; New field added at January, 7, 2000
+; This field used with dictionary-based attack/smart mutations to
+; make word "elite", i.e. vowels in lower case, other letters in upper
+; (for example, "password" becomes "PaSSWoRD")
+; This field contains only vowels (which also defined in FOREIGNCAPS field)
+FOREIGNVOWEL=
+
+;----------------------------------------------------------------------------;
+; AZPR messages                                                              ;
+;----------------------------------------------------------------------------;
+
+; Password range messages
+10=Analiziranje obsega Gesla...
+11=Neveljaven minimalni obseg Gesla. To ni pomembno za prièetek iskanja Gesla. Minimalni obseg je prirejen.
+
+; Starting password messages
+12=Analiziranje zaèetka Gesla...
+13=Prièeto pri Geslu
+14=Zadnje Geslo:
+
+; Password length messages
+15=Obseg Gesla =
+16=naredi geslo:
+
+; Mask messages
+17=Število ne-maskiranih simbolov =
+
+; Dictionary messages
+18=Startanje napada s slovarjem...
+
+; Registration messages
+20=je sedaj registriran !
+21=zagnana je, registrirana verzija.
+22=zagnana je, neregistrirana verzija, nekatere poteze so onemogoèene.
+23=%PROG_NAME% verzija %PROG_VER% - Registrirana
+24=%PROG_NAME% verzija %PROG_VER% - Ni registrirana
+
+; Autobackup messages
+30=Izdelujem kopijo datoteke...
+31=Imenik za samoshranjevanje ni doloèen. Posluži se poti:
+32=Pot za samoshranjevanje je napaèna
+33=Prosim izberite mapo za samoshranjevanje
+34=Izbrana pot za samoshranjevanje je preklicana. Samoshranjevanje je sedaj onemogoèeno
+35=Pot za samoshranjevanje je napaèna li pa ni doloèena. Onemogoèi samoshranjevanjele ?
+36=Datoteka za samoshranjevanje ni doloèena. Uporabi '%ASAVE_FILE%' datoteko
+
+; Interface messages
+40=-  Brez naslova
+41=Želite shraniti svoj projekt pred izhodom ?
+42=zaustavitev
+43=Poskušam odpreti izvorno datoteko
+44=Datoteka
+45=uspešno odprta
+
+; Project Messages
+50=kreiran je nov projekt
+
+; Result messages
+60=Geslo je uspešno obnovljeno !
+61=Kodirni kljuè je uspešno obnovljen !
+62=je veljavno geslo za to datoteko.
+
+; Button captions
+70=Odpri
+71=Shrani
+72=Startaj !
+73=Stop
+74=Zbirka znakov
+75=Testiranje
+76=Registracija
+77=Pomoè
+78=Nekaj o
+79=Izhod
+
+; Button hints
+80=Kreiraj nov projekt
+81=Odpri projekt...
+82=Shrani projekt
+83=Startaj obnavljanje
+84=Zaustavi obnavljanje
+85=Doloèi zbirko znakov...
+86=Naredi hitrostni test
+87=Vsebina s pomoèjo
+88=Nekaj o %PROG_NAME%
+89=Izhod iz %PROG_NAME%
+
+90=Registriraj svojo kopijo %PROG_NAME%
+
+91=Naloži %PROG_EXTU%-datoteko v ta projekt...
+92=Izberi datoteko s slovarjem...
+93=Izberi datoteko z enostavnim tekstom...
+94=Izberi imenik za samoshranjevanje...
+95=Pobriši zaèetno Geslo
+96=Pobriši maske
+97=Vse èrke + vse številke + vsi posebni simboli
+
+98=Poèisti vnos "startaj od"
+99=Išèi za Geslom
+100=Dekodiraj %PROG_EXTU% arhiv z uporabo teh kljuèev
+101=Naloži kodirne kljuèe
+102=Poèisti startno vrstico
+
+; Interface captions
+110=Kodirana %PROG_EXTU%-datoteka
+111=Možnosti slovarja
+112=Pot do datoteke s slovarjem:
+113=Možnosti obsega Gesla
+114=Minimalni obseg Gesla =
+115=Maksimalni obseg Gesla =
+
+116=Tip napada
+117=Surova moè
+118=Maska
+119=Slovar
+120=Preprost tekst
+
+121=Možnosti obsega Surove moèi
+122=Vsi znaki
+123=Presledek
+124=Vsi posebni simboli (!@...)
+125=Vse velike èrke (A - Z)
+126=Vse male èrke (a - z)
+127=Vse številke (0 - 9)
+128=Uporabnikove nastavitve
+129=Startaj od:
+130=Maska:
+131=Možnosti
+132=Pomanjšaj v tray
+133=Omogoèi beleženje v %LOGFILE%
+134=Preden spremeniš datoteko nardi kopijo
+135=Povej èe se je projekt spremenil
+136=Simbol za masko:
+137=Avtomatsko shranjevanje
+138=Shrani projekt vsako(i,ih)
+139=minut.
+140=Prednostne možnosti
+141=Ozadje
+142=Visoko
+143=Veljavno Geslo:
+144=Statusno okno
+145=Indikator napredovanja
+146=znak(ov)
+147=Pretkane spremembe
+148=Poskušaj vse kombinacije velike/male èrke
+149=Ime:
+150=Imenik za samoshranjevanje:
+151=Povpreèna hitrost:
+152=Potekli èas:
+153=Preostali èas:
+154=Dolžina Gesla =
+155=celoten:
+156=potek:
+157=Poteka slovarski napad
+158=gesl(o,a)
+159=Obnovi napredovalni interval vsakih
+160=ms
+161=Prièni v #
+162=Možnosti preprostega teksta
+163=Pot do datoteke s tekstom:
+164=Kljuè0:
+165=Kljuè1:
+166=Kljuè2:
+
+; Pagecontrol captions
+170=Obseg
+171=Dolžina
+172=Slovar
+173=Preprost tekst
+174=Samoshranjevanje
+175=Možnosti
+
+; Statistics messages
+180=Skupno število Gesel
+181=Skupen èas
+182=Povpreèna hitrost (gesel na sekundo)
+183=Geslo za to datoteko je
+184=Geslo v HEX obliki
+185=Ne najdem
+186=%PROG_FULLNAME% statistika:
+187=Kopiraj Geslo v Clipboard
+188=Kopiraj HEX Geslo v Clipboard
+189=Shrani...
+190=Shrani Geslo v datoteko
+191=OK
+192=Veè kot leto dni
+
+193=n/a
+194=Kodrirni kljuè
+195=Kopiraj kodirni kljuè v Clipboard
+196=Shrani kodrini kljuè v datoteko
+
+; User charset captions
+200=Uporabnikova zbirka znakov
+201=Doloèi svojo zbirko znakov
+202=Naloži zbirko znakov...
+203=Shrani zbirko znakov...
+204=Poèisti zbirko znakov
+205=Dodaj zbirko znakov iz datoteke...
+206=OK
+207=Preklièi
+208=Preoblikuj v OEM kodiranje
+
+; About box captions
+210=Vizitka
+211=verzija %PROG_VER%
+213=Odpri %PROG_NAME% WWW-stran
+214=Odpri Password Recovery Software WWW-stran
+215=Odpri Elcom Software WWW-stran
+
+; Plaintext progress messages
+220=Teèe napad s preprostim tekstom,
+221=zmanjšaj število kljuèev
+222=poizveduj za kljuèi
+223=poskušam obnoviti katerokoli geslo (do dolžine 9 posebnih znakov)
+224=poskušam obnoviti geslo v katerem so vsi znaki (do dolžine 10 znakov)
+
+230=%PROG_NAME% %PROG_VER%. Naloga je opravljena.
+231=%PROG_NAME%
+232=Neregistriran %PROG_NAME% lahko odkrije geslo samo do dolžine %UNREG_MAX% znakov.
+233=Arhiv je uspešno odkodiran.
+234=Napaka pri odkodiranju arhiva.
+235=Dekodirni kljuèi so prikazani samo v registrirani verziji.
+236=Geslo je bilo najdeno, vendar pa je obseg v poskuzni verziji prekoraèil omejitev.
+237=Samo prva datoteka v arhivu bo dekodirana.
+
+240=Izbrani imenik ne vsebuje datotek za ujemanje. Èe ste želeli pognati napad s preprostim\r\ntekstom uporabite samo prvi del datoteke, prosim spremenite arhiv tako\r\nda bo vseboval samo eno datoteko.
+241=Izbrani imenik ne vsebuje datotek za ujemanje. Èe bi želeli pognati napad s\r\npreprostim tekstom uporabite samo del datoteke?
+242=Stanje pri napadu s preprostim tekstom ne more biti shranjeno.\r\nGa resnièno želite ustaviti?
+243=Zagnan je napad s preprostim tekstom
+
+; Benchmark messages
+250=Žal mi je, testiranje je veljavno samo za Surovo moè in Surovo moè\r\n pri nadadu z masko.
+251=Testiranje ...
+252=Gesla napredujejo
+253=Delovni èas
+
+;
+; Error messages
+;
+
+; Brute-force
+300=Neveljavn obseg Gesla ali pa obseg ni doloèen.
+301=Neveljavno zaèetno geslo, ni izbran pravilni obseg
+302=Maksimalni obseg mora biti veèji kot minimalni obseg.
+303=Geslo ni njadeno.
+
+; Dictionary
+304=Napaka pri odpiranju datoteke s slovarjem
+305=Startna vestica presega velikost imenika
+
+; Common
+310=Ne morem shraniti v izbrano datoteko
+311=%PROG_NAME% Napaka
+312=Ustavil me je uporabnik
+313=Pot za samoshranjevanje ni doloèena
+314=Nepravilno napredovanje, vrstica vsebuje presledek
+315=Ne morem odpreti datoteke tega projekta
+
+; Archive's open errors
+320=Ne morem odpreti %PROG_EXTU% arhiva
+321=Izbrana datoteka ni v %PROG_EXTU% arhivu
+322=Arhivska datoteka je pokvarjena ali pa ni kodirana.
+323=Vrednostna napaka
+324=Usodna izkljuèitev
+
+; Quit message
+330=Izhod
+
+; Mask errors
+340=Maska ni nastavljena
+341=Simbol za masko ni najden
+342=Zaèetno geslo ne vsebuje Maske
+343=Simbol za masko ni doloèen
+
+; Plaintext errors
+350=Kodirnih kljuèev ne najdem
+351=Izbrani arhiv vsebuje kodirane datoteke.
+352=Ni dovolj podatkov za napad s preprostim tekstom.
+353=Notranja papaka pri napadu s preprostim tekstom.
+354=Neveljavna vrednost.
+
+;---------------------------------------
+; New message added at December, 14 1999
+
+; Registration messages
+360=Registracija
+361=Vnesi registracijsko kodo:
+362=Hvala vam za registracijo %PROG_NAME%!
+363=Vnesli ste nepravilno kodo!
+
+; Dialog headers
+370=Rezultati testiranja
+
+; Partial plain-text attack dialog
+371=Za napad uporabite samo del datoteke.
+372=Vnesi velikost preprostega teksta:
+
+; Error message used with different previously defined error messages
+380=Napaka:
+
+; When selecting language from options menu
+390=Jezik:
+
+; These message (maybe) will be used with plain-text & dictionary attack
+; %d means a number inserted by program (as in C programming language)
+400=perioda %d od %d
+401=vrstica %d od %d
+
+; Open filters, | means delimiter
+410=Datoteka z zbirko znakov (*.chr)|*.chr|Vse datoteke (*.*)|*.*
+411=%PROG_NAME% statusne datoteke (*.%PROG_NAME_EXT%)|*.%PROG_NAME_EXT%|Vse datoteke (*.*)|*.*
+412=%PROG_EXTU% datoteke (*.%PROG_EXT%)|*.%PROG_EXT%|SFX-%PROG_EXTU% datoteke (*.exe)|*.exe|Vse datoteke (*.*)|*.*
+413=Datoteke slovarjev (*.dic)|*.dic|Datoteke s tekstom (*.txt)|*.txt|Vse datoteke (*.*)|*.*
+414=%PROG_EXTU% files (*.%PROG_EXT%)|*.%PROG_EXT%|Vse datoteke (*.*)|*.*
+415=Datoteke s tekstom (*.txt)|*.txt|Vse datoteke (*.*)|*.*
+
+;--------------------------------------
+; New messages added at January, 7 2000
+; Command line messages
+420=Nepravilna ukazna vrstica
+421=Datoteka ni zašèitena z geslom %PROG_EXTU%-arhiv ali statusna datoteka.
+
+; Question after plaintext attack if we aren't got a password
+430=Geslo ni njadeno. Ali želite sedaj dekodirati arhiv?
+
+431=Obseg Maske je v neregistrirani verziji prekoraèil omejitve.
+
+; When user drag'n'dropped several files:
+432=%PROG_NAME% lahko sprejme samo eno datoteko naenkrat.
+
+;---------------------------------------
+; New messages added at Januany, 17 2000
+; (will be used in later versions)
+
+; Plain-text with binary (not a archive) file (also used msgs 371-372)
+440=Dovoli uporabi binarne datoteke kot arhiv s preprostim tekstom %PROG_EXTU% archive
+441=Vnesi nadomestne podatke
+
+;---------------------------------------
+; New messages added at March, 3 2000
+;---------------------------------------
+450=Posodobi
+451=Preveri za posodobitev %PROG_NAME% na Internetu.
+452=Ta program vas poveže z Elcom spletnim mestom, kjer dobite informacije\r\no najnovejši verziji %PROG_NAME%. Niè ne bo poslano na Elcom spletno stran\r\n(razen vaše trenutne številke verzije). Preprièajte se, da ste na liniji in\r\npritisnite "V redu"; ali "Preklièi" kot se odloèite.
+453=Prosim, poèakaj
+454=Povezujem z Elcom web mestom...
+455=Ne morem izmenjati informacij o trenutni verziji
+456=WININET.DLL ni namešèen
+457=Povezovanje je preklicano
+458=Ne morem povezati s spletnim mestom
+459=Imate najnovejšo verzijo %PROG_NAME%
+460=Posodobitev je odobrena, najnovejša verzija je %s.\r\nLahko jo dobiš na %s.
+
+; New "About" dialog messages
+470=Novosti o izdelku:
+471=Odpravljanje težav:
+472=Password Recovery Software:
+473=Pošjli odgovor, pošto:
+474=Elcom domaèa stran:
+
+480=Pomoè
+
+; Advanced plaintext configuration dialog messages
+; (This feature will be implemented in future versions of AZPR)
+490=Priklièi napredno obliko dialoga s preprostim tekstom
+491=Napredna oblika preprostega teksta
+492=Kodirana datoteka
+493=Izberi kodirano datoteko...
+494=Datoteka z preprotim tekstom
+495=Izberi datoteko s preprostim tekstom...
+496=Binarni podatki
+497=Velikost arhiva
+498=Velikost podatka:
+499=Nadomesti podatke:
+500=Povezava vsebuje datoteke v arhivuih
+501=Startaj od:
+502=Poèisti vnos 'startaj od'
+503='Startaj od' vnos vsebuje neveljavno vrednost.\r\nPobriši in ponovno prièni napad.
+
+; next line starts from lowercase letter 'cause it used (or will be used)
+; in the middle of the phrase...
+510=verzija
+
+520=RSA kljuèa ne najdem
+521=RSA datoteka s kljuèem je poškodovana
+522=RSA datoteka s kljuèem je neveljavna
+
+; new for 3.50
+530=Zahtevnejše
+531=Zahtevnejše možnosti
+532=Uporabi znan zaèetek datoteke za shranitev v arhiv (hex)
+533=Vedno upoprabi WinZIP za optimizacijo pogona za napad, èe je verjetnost < kot
+534=Znani biti:
+535=Ta arhiv je bil narejen z WinZIP z %d%% verjetnostjo.\r\nŽelite uporabiti WinZIP za optimizacijo pogona napada?
+536=Vnos "znani biti" je neveljaven. Prosim popravite in ponovno poženite napad\r\n(Biti se bodo prikazali eden po eden v praznih polijih, v hex obliki).
+; status window messages
+537=Uporabljam znan zaèetek datoteke.
+538=Uporabljam winzip pogon za optimiziranje napada.
+
+540=Ta arhiv je bil narejen z %PROG_EXTU% verzijo katera ni podprta v %PROG_NAME% (še ni).
+541=Testni imenik
+
+550=Konèaj pri:
+551=Pobriši zadnje Geslo
+552=Konèni obseg gesla ne vpliva na maksimalni obseg gesla.
+553=Neveljavno konèno geslo, ni pomembno pri izbiri obsega
+554=V konènem geslu ni Maske
+555=Ne morem pognati napada.\r\nZaèetno Geslo je veèje ali enako konènemu geslu.
+556=Napad je ustavljen pri Geslu '%s'.
+
+; New messages at 14.11.2000
+560=Napad s Preprostim tekstom ni primeren za ACE & RAR arhive
+561=Za izvedbo napada s Preprostim tekstom, morate uporabiti arhive podobnega tipa
+
+; New messages at 18.01.2000
+565=Ne morem izvesti napada: neznan naèin zgošèevanja (stiskaja)
+566=Opozorilo: deflate64 zgošèevaje
+; End of message file
