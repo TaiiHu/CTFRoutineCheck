@@ -25,6 +25,10 @@ exiftool -all="" hide.jpg
 + 若加密数据是**图片**则需要**原始图像**和**加水印图像**
 + 若加密数据是**文本**则仅需要**加水印图像**
 [提取图像不再需要原图的工具BlindWaterMark](https://github.com/ww23/BlindWatermark)
+``` bash
+#图片水印解码
+java -jar BlindWatermark.jar decode -c gakki-dct-img-ec.jpg gakki-dct-img-dc.jpg
+```
 4. 与或非运算
 + [StegSolve](StegSolve-1.4.jar) 
 #### JPG
